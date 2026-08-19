@@ -1,0 +1,178 @@
+<!doctype html><html itemscope itemtype=http://schema.org/WebPage lang=en class=no-js data-theme-init><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=color-scheme content="light dark"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#000000"><style>html{background:Canvas;color:CanvasText}@media(prefers-color-scheme:dark){html{background:#0b0d12;color:#e6e6e6}}html[data-theme-init] *{transition:none!important}</style><script>(function(){const t="td-color-theme",n=localStorage.getItem(t);let e=n||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");e==="auto"&&(e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),document.documentElement.setAttribute("data-bs-theme",e)})()</script><meta name=robots content="index, follow"><title>Dependency graph | Dotnet Libraries</title><meta name=description content="How the ArturRios packages depend on each other — from the Output envelopes at the root up to the web API and test helpers."><meta property="og:url" content="https://artur-rios.github.io/dotnet-libraries/docs/dependencies/"><meta property="og:site_name" content="Dotnet Libraries"><meta property="og:title" content="Dependency graph"><meta property="og:description" content="How the ArturRios packages depend on each other — from the Output envelopes at the root up to the web API and test helpers."><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta itemprop=name content="Dependency graph"><meta itemprop=description content="How the ArturRios packages depend on each other — from the Output envelopes at the root up to the web API and test helpers."><meta itemprop=wordCount content="411"><meta name=twitter:card content="summary"><meta name=twitter:title content="Dependency graph"><meta name=twitter:description content="How the ArturRios packages depend on each other — from the Output envelopes at the root up to the web API and test helpers."><link rel=preload href=/dotnet-libraries/scss/main.min.6547925296fcd5e3936ae1f93bacaa33506df13ab413b129c772852c0b3752a7.css as=style integrity="sha256-ZUeSUpb81eOTauH5O6yqM1Bt8Tq0E7Epx3KFLAs3Uqc=" crossorigin=anonymous><link href=/dotnet-libraries/scss/main.min.6547925296fcd5e3936ae1f93bacaa33506df13ab413b129c772852c0b3752a7.css rel=stylesheet integrity="sha256-ZUeSUpb81eOTauH5O6yqM1Bt8Tq0E7Epx3KFLAs3Uqc=" crossorigin=anonymous><script src=https://code.jquery.com/jquery-3.7.1.min.js integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin=anonymous></script><script defer src=https://unpkg.com/lunr@2.3.9/lunr.min.js integrity=sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli crossorigin=anonymous></script></head><body class=td-page><header><nav class="td-navbar js-navbar-scroll"><div class="td-navbar-container container-fluid flex-column flex-md-row"><a class=navbar-brand href=/dotnet-libraries/><span class="navbar-brand__logo navbar-logo"></span><span class=navbar-brand__name>Dotnet Libraries</span></a><div class="td-navbar__main td-navbar-nav-scroll td-navbar-nav-scroll--indicator" id=main_navbar><div class="scroll-indicator scroll-left"></div><ul class=navbar-nav><li class=nav-item><a class=nav-link href=/dotnet-libraries/docs/><span>Documentation</span></a></li><li class=nav-item><a class=nav-link href=/dotnet-libraries/docs/libraries/><span>Libraries</span></a></li><li class=nav-item><a class=nav-link href=/dotnet-libraries/docs/dependencies/><span>Dependencies</span></a></li><li class=nav-item><a class=nav-link href=https://github.com/artur-rios/dotnet-libraries target=_blank rel=noopener><i class="fab fa-github"></i><span>GitHub</span></a></li><li class="nav-item td-navbar__light-dark-menu"><div class="td-light-dark-menu dropdown"><svg class="d-none"><symbol id="check2" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5.0 010 .708l-7 7a.5.5.0 01-.708.0l-3.5-3.5a.5.5.0 11.708-.708L6.5 10.293l6.646-6.647a.5.5.0 01.708.0z"/></symbol><symbol id="circle-half" viewBox="0 0 16 16"><path d="M8 15A7 7 0 108 1v14zm0 1A8 8 0 118 0a8 8 0 010 16z"/></symbol><symbol id="moon-stars-fill" viewBox="0 0 16 16"><path d="M6 .278a.768.768.0 01.08.858 7.208 7.208.0 00-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527.0 1.04-.055 1.533-.16a.787.787.0 01.81.316.733.733.0 01-.031.893A8.349 8.349.0 018.344 16C3.734 16 0 12.286.0 7.71.0 4.266 2.114 1.312 5.124.06A.752.752.0 016 .278z"/><path d="M10.794 3.148a.217.217.0 01.412.0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217.0 010 .412l-1.162.387A1.734 1.734.0 0011.593 7.69l-.387 1.162a.217.217.0 01-.412.0l-.387-1.162A1.734 1.734.0 009.31 6.593l-1.162-.387a.217.217.0 010-.412l1.162-.387a1.734 1.734.0 001.097-1.097l.387-1.162zM13.863.099a.145.145.0 01.274.0l.258.774c.115.346.386.617.732.732l.774.258a.145.145.0 010 .274l-.774.258a1.156 1.156.0 00-.732.732l-.258.774a.145.145.0 01-.274.0l-.258-.774a1.156 1.156.0 00-.732-.732l-.774-.258a.145.145.0 010-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/></symbol><symbol id="sun-fill" viewBox="0 0 16 16"><path d="M8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.5.5.0 01.5.5v2a.5.5.0 01-1 0v-2A.5.5.0 018 0zm0 13a.5.5.0 01.5.5v2a.5.5.0 01-1 0v-2A.5.5.0 018 13zm8-5a.5.5.0 01-.5.5h-2a.5.5.0 010-1h2a.5.5.0 01.5.5zM3 8a.5.5.0 01-.5.5h-2a.5.5.0 010-1h2A.5.5.0 013 8zm10.657-5.657a.5.5.0 010 .707l-1.414 1.415a.5.5.0 11-.707-.708l1.414-1.414a.5.5.0 01.707.0zm-9.193 9.193a.5.5.0 010 .707L3.05 13.657a.5.5.0 01-.707-.707l1.414-1.414a.5.5.0 01.707.0zm9.193 2.121a.5.5.0 01-.707.0l-1.414-1.414a.5.5.0 01.707-.707l1.414 1.414a.5.5.0 010 .707zM4.464 4.465a.5.5.0 01-.707.0L2.343 3.05a.5.5.0 11.707-.707l1.414 1.414a.5.5.0 010 .708z"/></symbol></svg>
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id=bd-theme type=button aria-expanded=false data-bs-toggle=dropdown aria-label="Toggle theme (auto)">
+<svg class="bi my-1 theme-icon-active"><use href="#circle-half"/></svg></button><ul class=dropdown-menu aria-labelledby=bd-theme><li><button type=button class="dropdown-item d-flex align-items-center" data-bs-theme-value=light aria-pressed=false>
+<svg class="bi me-2 opacity-50"><use href="#sun-fill"/></svg>
+Light
+<svg class="bi ms-auto d-none"><use href="#check2"/></svg></button></li><li><button type=button class="dropdown-item d-flex align-items-center" data-bs-theme-value=dark aria-pressed=false>
+<svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"/></svg>
+Dark
+<svg class="bi ms-auto d-none"><use href="#check2"/></svg></button></li><li><button type=button class="dropdown-item d-flex align-items-center active" data-bs-theme-value=auto aria-pressed=true>
+<svg class="bi me-2 opacity-50"><use href="#circle-half"/></svg>
+Auto
+<svg class="bi ms-auto d-none"><use href="#check2"/></svg></button></li></ul></div></li></ul><div class="scroll-indicator scroll-right"></div></div><div class="td-navbar__search d-none d-lg-block"><div class="td-search td-search--offline"><div class=td-search__icon></div><input type=search name=q class="td-search__input form-control" placeholder='Search this site…' aria-label='Search this site…' autocomplete=off data-offline-search-index-json-src=/dotnet-libraries/offline-search-index.cd426d1ad2675f74930094bbba5b428b.json data-offline-search-base-href=/ data-offline-search-max-results=10></div></div></div></nav></header><div class="container-fluid td-outer"><div class=td-main data-bs-spy=scroll data-bs-target=.td-toc data-bs-root-margin="0px 0px -10%"><div class="row flex-xl-nowrap"><aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none"><div id=td-sidebar-menu class=td-sidebar__inner><form class="td-sidebar__search d-flex align-items-center"><div class="td-search td-search--offline"><div class=td-search__icon></div><input type=search name=q class="td-search__input form-control" placeholder='Search this site…' aria-label='Search this site…' autocomplete=off data-offline-search-index-json-src=/dotnet-libraries/offline-search-index.cd426d1ad2675f74930094bbba5b428b.json data-offline-search-base-href=/ data-offline-search-max-results=10></div><button class="btn btn-link td-sidebar__toggle" type=button data-bs-toggle=collapse data-bs-target=#td-section-nav aria-controls=td-section-nav aria-expanded=false aria-label="Toggle section navigation"></button></form><nav class="td-sidebar-nav collapse foldable-nav" id=td-section-nav><ul class="td-sidebar-nav__section pe-md-3 ul-0"><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-dotnet-librariesdocs-li><a href=/dotnet-libraries/docs/ class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id=m-dotnet-librariesdocs><span>Documentation</span></a><ul class=ul-1><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-dotnet-librariesdocslibraries-li><input type=checkbox id=m-dotnet-librariesdocslibraries-check>
+<label for=m-dotnet-librariesdocslibraries-check><a href=/dotnet-libraries/docs/libraries/ class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id=m-dotnet-librariesdocslibraries><span>Libraries</span></a></label><ul class="ul-2 foldable"><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrariesoutput-li><input type=checkbox id=m-dotnet-librariesdocslibrariesoutput-check>
+<label for=m-dotnet-librariesdocslibrariesoutput-check><a href=/dotnet-libraries/docs/libraries/output/ title=ArturRios.Output class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrariesoutput><span>Output</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrariesutil-li><input type=checkbox id=m-dotnet-librariesdocslibrariesutil-check>
+<label for=m-dotnet-librariesdocslibrariesutil-check><a href=/dotnet-libraries/docs/libraries/util/ title=ArturRios.Util class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrariesutil><span>Util</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrariesextensions-li><input type=checkbox id=m-dotnet-librariesdocslibrariesextensions-check>
+<label for=m-dotnet-librariesdocslibrariesextensions-check><a href=/dotnet-libraries/docs/libraries/extensions/ title=ArturRios.Extensions class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrariesextensions><span>Extensions</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrariesconfiguration-li><input type=checkbox id=m-dotnet-librariesdocslibrariesconfiguration-check>
+<label for=m-dotnet-librariesdocslibrariesconfiguration-check><a href=/dotnet-libraries/docs/libraries/configuration/ title=ArturRios.Configuration class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrariesconfiguration><span>Configuration</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrarieslogging-li><input type=checkbox id=m-dotnet-librariesdocslibrarieslogging-check>
+<label for=m-dotnet-librariesdocslibrarieslogging-check><a href=/dotnet-libraries/docs/libraries/logging/ title=ArturRios.Logging class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrarieslogging><span>Logging</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrariesjwt-li><input type=checkbox id=m-dotnet-librariesdocslibrariesjwt-check>
+<label for=m-dotnet-librariesdocslibrariesjwt-check><a href=/dotnet-libraries/docs/libraries/jwt/ title=ArturRios.Jwt class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrariesjwt><span>JWT</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrariesvalidation-li><input type=checkbox id=m-dotnet-librariesdocslibrariesvalidation-check>
+<label for=m-dotnet-librariesdocslibrariesvalidation-check><a href=/dotnet-libraries/docs/libraries/validation/ title=ArturRios.Validation class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrariesvalidation><span>Validation</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrariesmediator-li><input type=checkbox id=m-dotnet-librariesdocslibrariesmediator-check>
+<label for=m-dotnet-librariesdocslibrariesmediator-check><a href=/dotnet-libraries/docs/libraries/mediator/ title=ArturRios.Mediator class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrariesmediator><span>Mediator</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrariesmessaging-li><input type=checkbox id=m-dotnet-librariesdocslibrariesmessaging-check>
+<label for=m-dotnet-librariesdocslibrariesmessaging-check><a href=/dotnet-libraries/docs/libraries/messaging/ title=ArturRios.Messaging class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrariesmessaging><span>Messaging</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrariesdata-li><input type=checkbox id=m-dotnet-librariesdocslibrariesdata-check>
+<label for=m-dotnet-librariesdocslibrariesdata-check><a href=/dotnet-libraries/docs/libraries/data/ title=ArturRios.Data class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrariesdata><span>Data</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrarieswebapi-util-li><input type=checkbox id=m-dotnet-librariesdocslibrarieswebapi-util-check>
+<label for=m-dotnet-librariesdocslibrarieswebapi-util-check><a href=/dotnet-libraries/docs/libraries/webapi-util/ title=ArturRios.Util.WebApi class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrarieswebapi-util><span>Web API Util</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocslibrariestest-util-li><input type=checkbox id=m-dotnet-librariesdocslibrariestest-util-check>
+<label for=m-dotnet-librariesdocslibrariestest-util-check><a href=/dotnet-libraries/docs/libraries/test-util/ title=ArturRios.Util.Test class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocslibrariestest-util><span>Test Util</span></a></label></li></ul></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-dotnet-librariesdocsdependencies-li><input type=checkbox id=m-dotnet-librariesdocsdependencies-check checked>
+<label for=m-dotnet-librariesdocsdependencies-check><a href=/dotnet-libraries/docs/dependencies/ title="Dependency graph" class="align-left ps-0 active td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocsdependencies><span class=td-sidebar-nav-active-item>Dependencies</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocspatterns-li><input type=checkbox id=m-dotnet-librariesdocspatterns-check>
+<label for=m-dotnet-librariesdocspatterns-check><a href=/dotnet-libraries/docs/patterns/ title="Shared patterns" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocspatterns><span>Patterns</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocsrepositories-li><input type=checkbox id=m-dotnet-librariesdocsrepositories-check>
+<label for=m-dotnet-librariesdocsrepositories-check><a href=/dotnet-libraries/docs/repositories/ class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocsrepositories><span>Repositories</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-dotnet-librariesdocspackages-li><input type=checkbox id=m-dotnet-librariesdocspackages-check>
+<label for=m-dotnet-librariesdocspackages-check><a href=/dotnet-libraries/docs/packages/ class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-dotnet-librariesdocspackages><span>NuGet packages</span></a></label></li></ul></li></ul></nav></div></aside><aside class=td-sidebar-toc><div class="td-page-meta ms-2 pb-1 pt-2 mb-0"><a href=https://github.com/artur-rios/dotnet-libraries/tree/main/docs/content/en/docs/dependencies.md class="td-page-meta--view td-page-meta__view" target=_blank rel=noopener><i class="fa-solid fa-file-lines fa-fw"></i> View page source</a>
+<a href=https://github.com/artur-rios/dotnet-libraries/edit/main/docs/content/en/docs/dependencies.md class="td-page-meta--edit td-page-meta__edit" target=_blank rel=noopener><i class="fa-solid fa-pen-to-square fa-fw"></i> Edit this page</a>
+<a href="https://github.com/artur-rios/dotnet-libraries/new/main/docs/content/en/docs?filename=change-me.md&amp;value=---%0Atitle%3A+%22Long+Page+Title%22%0AlinkTitle%3A+%22Short+Nav+Title%22%0Aweight%3A+100%0Adescription%3A+%3E-%0A+++++Page+description+for+heading+and+indexes.%0A---%0A%0A%23%23+Heading%0A%0AEdit+this+template+to+create+your+new+page.%0A%0A%2A+Give+it+a+good+name%2C+ending+in+%60.md%60+-+e.g.+%60get-started.md%60%0A%2A+Edit+the+%22front+matter%22+section+at+the+top+of+the+page+%28weight+controls+how+its+ordered+amongst+other+pages+in+the+same+directory%3B+lowest+number+first%29.%0A%2A+Add+a+good+commit+message+at+the+bottom+of+the+page+%28%3C80+characters%3B+use+the+extended+description+field+for+more+detail%29.%0A%2A+Create+a+new+branch+so+you+can+preview+your+new+file+and+request+a+review+via+Pull+Request.%0A" class="td-page-meta--child td-page-meta__child" target=_blank rel=noopener><i class="fa-solid fa-pen-to-square fa-fw"></i> Create child page</a>
+<a href="https://github.com/artur-rios/dotnet-libraries/issues/new?title=Dependency%20graph" class="td-page-meta--issue td-page-meta__issue" target=_blank rel=noopener><i class="fa-solid fa-list-check fa-fw"></i> Create documentation issue</a></div><div class=td-toc data-proofer-ignore><div class=td-toc-title><span class=td-toc-title__text>On this page</span>
+<a class=td-toc-title__link title="Top of page" href=#></a></div><nav id=TableOfContents><ul><li><a href=#the-whole-family>The whole family</a></li><li><a href=#inside-arturriosdata>Inside ArturRios.Data</a></li><li><a href=#dependency-table>Dependency table</a></li><li><a href=#a-typical-service>A typical service</a></li></ul></nav></div></aside><main class="col-12 col-md-9 col-xl-8 ps-md-5" role=main><nav aria-label=breadcrumb class=td-breadcrumbs><ol class=breadcrumb><li class=breadcrumb-item><a href=/dotnet-libraries/docs/>Documentation</a></li><li class="breadcrumb-item active" aria-current=page>Dependencies</li></ol></nav><div class=td-content><h1>Dependency graph</h1><div class=lead>How the ArturRios packages depend on each other — from the Output envelopes at the root up to the web API and test helpers.</div><header class=article-meta></header><p>Only dependencies <strong>within the family</strong> are shown. Third-party dependencies (FluentValidation, EF Core,
+Dapper, the MongoDB and AWS SDKs, xUnit, <code>Microsoft.Extensions.*</code>) are listed on each library&rsquo;s own page.</p><h2 id=the-whole-family>The whole family</h2><p><code>ArturRios.Output</code> is the root: it defines the envelopes every fallible operation returns, and it depends
+on nothing else in the family. <code>ArturRios.Util.Test</code> is the leaf that pulls in the most, because a test
+helper has to know about everything it fakes.</p><pre class=mermaid>flowchart BT
+    Output[&#34;&lt;b&gt;ArturRios.Output&lt;/b&gt;&lt;br/&gt;&lt;i&gt;result envelopes&lt;/i&gt;&#34;]
+    Util[&#34;&lt;b&gt;ArturRios.Util&lt;/b&gt;&#34;]
+    Extensions[&#34;&lt;b&gt;ArturRios.Extensions&lt;/b&gt;&#34;]
+    Configuration[&#34;&lt;b&gt;ArturRios.Configuration&lt;/b&gt;&#34;]
+    Logging[&#34;&lt;b&gt;ArturRios.Logging&lt;/b&gt;&#34;]
+    Jwt[&#34;&lt;b&gt;ArturRios.Jwt&lt;/b&gt;&#34;]
+    Validation[&#34;&lt;b&gt;ArturRios.Validation&lt;/b&gt;&#34;]
+    Mediator[&#34;&lt;b&gt;ArturRios.Mediator&lt;/b&gt;&#34;]
+    Messaging[&#34;&lt;b&gt;ArturRios.Messaging&lt;/b&gt;&#34;]
+    DataCore[&#34;&lt;b&gt;ArturRios.Data.*&lt;/b&gt;&lt;br/&gt;&lt;i&gt;9 packages&lt;/i&gt;&#34;]
+    WebApi[&#34;&lt;b&gt;ArturRios.Util.WebApi&lt;/b&gt;&#34;]
+    TestUtil[&#34;&lt;b&gt;ArturRios.Util.Test&lt;/b&gt;&#34;]
+
+    Util --&gt; Output
+    Validation --&gt; Output
+    Mediator --&gt; Output
+    Messaging --&gt; Output
+    DataCore --&gt; Output
+
+    Extensions --&gt; Util
+    Configuration --&gt; Extensions
+    Logging --&gt; Extensions
+    Logging --&gt; Util
+
+    WebApi --&gt; Configuration
+    WebApi --&gt; Jwt
+    WebApi --&gt; Util
+
+    TestUtil --&gt; Configuration
+    TestUtil --&gt; Mediator
+    TestUtil --&gt; Util
+    TestUtil --&gt; WebApi
+    TestUtil --&gt; DataCore
+
+    classDef root fill:#0b6e99,stroke:#084c69,color:#fff;
+    classDef standalone fill:#f5f5f5,stroke:#999,color:#222;
+    class Output root;
+    class Jwt standalone;</pre><p><code>ArturRios.Jwt</code> is deliberately standalone — it depends on nothing in the family, so a service can issue
+and validate tokens without adopting anything else.</p><h2 id=inside-arturriosdata>Inside ArturRios.Data</h2><p>The <code>Data</code> repository ships nine packages so you install only the backend you use. The relational
+packages share a common core; MongoDB, DynamoDB and the export writers are independent of it.</p><pre class=mermaid>flowchart BT
+    Output[&#34;&lt;b&gt;ArturRios.Output&lt;/b&gt;&#34;]
+
+    subgraph Relational[&#34;Relational — EF Core&#34;]
+        direction BT
+        Core[&#34;ArturRios.Data.Relational.Core&#34;]
+        Postgres[&#34;ArturRios.Data.PostgreSql&#34;]
+        MySql[&#34;ArturRios.Data.MySql&#34;]
+        Sqlite[&#34;ArturRios.Data.Sqlite&#34;]
+        Dapper[&#34;ArturRios.Data.Dapper&lt;br/&gt;&lt;i&gt;read path&lt;/i&gt;&#34;]
+    end
+
+    subgraph NoSql[&#34;NoSQL&#34;]
+        direction BT
+        Mongo[&#34;ArturRios.Data.MongoDb&#34;]
+        Dynamo[&#34;ArturRios.Data.DynamoDb&#34;]
+    end
+
+    subgraph Exporting[&#34;Export writers&#34;]
+        direction BT
+        Export[&#34;ArturRios.Data.Export&lt;br/&gt;&lt;i&gt;CSV, JSON, TXT, MessagePack&lt;/i&gt;&#34;]
+        Excel[&#34;ArturRios.Data.Export.Excel&#34;]
+    end
+
+    Postgres --&gt; Core
+    MySql --&gt; Core
+    Sqlite --&gt; Core
+    Dapper --&gt; Core
+    Excel --&gt; Export
+
+    Core --&gt; Output
+    Mongo --&gt; Output
+    Dynamo --&gt; Output
+    Export --&gt; Output
+
+    classDef root fill:#0b6e99,stroke:#084c69,color:#fff;
+    class Output root;</pre><h2 id=dependency-table>Dependency table</h2><p>Read an arrow as <em>&ldquo;depends on&rdquo;</em>. Versions are the ones currently referenced in each project file, and
+move independently of one another.</p><table><thead><tr><th>Package</th><th>Depends on (family only)</th></tr></thead><tbody><tr><td><code>ArturRios.Output</code></td><td>—</td></tr><tr><td><code>ArturRios.Jwt</code></td><td>—</td></tr><tr><td><code>ArturRios.Util</code></td><td><code>ArturRios.Output</code></td></tr><tr><td><code>ArturRios.Extensions</code></td><td><code>ArturRios.Util</code></td></tr><tr><td><code>ArturRios.Configuration</code></td><td><code>ArturRios.Extensions</code></td></tr><tr><td><code>ArturRios.Logging</code></td><td><code>ArturRios.Extensions</code>, <code>ArturRios.Util</code></td></tr><tr><td><code>ArturRios.Validation</code></td><td><code>ArturRios.Output</code></td></tr><tr><td><code>ArturRios.Mediator</code></td><td><code>ArturRios.Output</code></td></tr><tr><td><code>ArturRios.Messaging</code></td><td><code>ArturRios.Output</code></td></tr><tr><td><code>ArturRios.Data.Relational.Core</code></td><td><code>ArturRios.Output</code></td></tr><tr><td><code>ArturRios.Data.PostgreSql</code></td><td><code>ArturRios.Data.Relational.Core</code></td></tr><tr><td><code>ArturRios.Data.MySql</code></td><td><code>ArturRios.Data.Relational.Core</code></td></tr><tr><td><code>ArturRios.Data.Sqlite</code></td><td><code>ArturRios.Data.Relational.Core</code></td></tr><tr><td><code>ArturRios.Data.Dapper</code></td><td><code>ArturRios.Data.Relational.Core</code></td></tr><tr><td><code>ArturRios.Data.MongoDb</code></td><td><code>ArturRios.Output</code></td></tr><tr><td><code>ArturRios.Data.DynamoDb</code></td><td><code>ArturRios.Output</code></td></tr><tr><td><code>ArturRios.Data.Export</code></td><td><code>ArturRios.Output</code></td></tr><tr><td><code>ArturRios.Data.Export.Excel</code></td><td><code>ArturRios.Data.Export</code></td></tr><tr><td><code>ArturRios.Util.WebApi</code></td><td><code>ArturRios.Configuration</code>, <code>ArturRios.Jwt</code>, <code>ArturRios.Util</code></td></tr><tr><td><code>ArturRios.Util.Test</code></td><td><code>ArturRios.Configuration</code>, <code>ArturRios.Data.Relational.Core</code>, <code>ArturRios.Mediator</code>, <code>ArturRios.Util</code>, <code>ArturRios.Util.WebApi</code></td></tr></tbody></table><h2 id=a-typical-service>A typical service</h2><p>A web API built on the family usually ends up with this stack — and picks up the rest transitively.</p><pre class=mermaid>flowchart LR
+    App[&#34;Your service&#34;] --&gt; WebApi[&#34;ArturRios.Util.WebApi&#34;]
+    App --&gt; Mediator[&#34;ArturRios.Mediator&#34;]
+    App --&gt; Validation[&#34;ArturRios.Validation&#34;]
+    App --&gt; Data[&#34;ArturRios.Data.PostgreSql&#34;]
+    App --&gt; Logging[&#34;ArturRios.Logging&#34;]
+    Tests[&#34;Your test project&#34;] --&gt; TestUtil[&#34;ArturRios.Util.Test&#34;]
+    TestUtil -.-&gt; WebApi
+    WebApi -.-&gt; Transitive[&#34;Configuration · Jwt · Util · Extensions · Output&#34;]</pre></div></main></div></div><footer class="td-footer row d-print-none"><div class=container-fluid><div class="row mx-md-2"><div class="td-footer__left col-6 col-sm-4 order-sm-1"><ul class=td-footer__links-list><li class=td-footer__links-item data-bs-toggle=tooltip title=Author aria-label=Author><a href=https://www.artur-rios.tech/ aria-label=Author target=_blank rel=noopener><i class="fa fa-user"></i></a></li></ul></div><div class="td-footer__right col-6 col-sm-4 order-sm-3"><ul class=td-footer__links-list><li class=td-footer__links-item data-bs-toggle=tooltip title=GitHub aria-label=GitHub><a href=https://github.com/artur-rios aria-label=GitHub target=_blank rel=noopener><i class="fab fa-github"></i></a></li><li class=td-footer__links-item data-bs-toggle=tooltip title=NuGet aria-label=NuGet><a href=https://www.nuget.org/profiles/artur-rios aria-label=NuGet target=_blank rel=noopener><i class="fas fa-cube"></i></a></li></ul></div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2"><span class=td-footer__copyright>&copy;
+2026
+<span class=td-footer__authors>Artur Rios | <a href=https://github.com/artur-rios/dotnet-libraries/blob/main/LICENSE>MIT License</a></span></span><span class=td-footer__all_rights_reserved>All Rights Reserved</span></div></div></div></footer></div><script type=module async>
+  import mermaid from "https:\/\/cdn.jsdelivr.net\/npm\/mermaid@latest\/dist\/mermaid.esm.min.mjs";
+
+  (function ($) {
+    if ($('.mermaid').length == 0) {
+      mermaid.initialize({ startOnLoad: false });
+      return;
+    }
+
+    var params = {};
+
+    
+    
+    var norm = function (defaultConfig, params) {
+      var result = {};
+      for (const key in defaultConfig) {
+        const keyLower = key.toLowerCase();
+        if (defaultConfig.hasOwnProperty(key) && params.hasOwnProperty(keyLower)) {
+          if (typeof defaultConfig[key] === "object") {
+            result[key] = norm(defaultConfig[key], params[keyLower]);
+          } else {
+            result[key] = params[keyLower];
+          }
+        }
+      }
+      return result;
+    };
+
+    var settings = norm(mermaid.mermaidAPI.defaultConfig, params);
+    settings.startOnLoad = true;
+    if ($('html[data-bs-theme="dark"]').length) {
+      settings.theme = 'dark';
+    }
+    mermaid.initialize(settings);
+
+    
+    const lightDarkModeThemeChangeHandler = function (mutationsList, observer) {
+      for (const mutation of mutationsList) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'data-bs-theme') {
+          
+          
+          
+          location.reload();
+        }
+      }
+    };
+
+    const observer = new MutationObserver(lightDarkModeThemeChangeHandler);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-bs-theme']
+    });
+    
+
+  })(jQuery);
+</script><script src=/dotnet-libraries/js/main.min.0a5c5582cffd2efa07a3604a2a7d3f930a2594b6486c939d4b10485316b8017d.js integrity="sha256-ClxVgs/9LvoHo2BKKn0/kwollLZIbJOdSxBIUxa4AX0=" crossorigin=anonymous></script><script defer src=/dotnet-libraries/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js integrity="sha256-JFdv+f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin=anonymous></script><script src=/dotnet-libraries/js/tabpane-persist.js></script></body></html>
