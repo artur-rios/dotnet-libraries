@@ -1,0 +1,37 @@
+{{- /*
+  Render a package's family dependencies as a list, each with the version it
+  pins, followed by the transitive ones derived from the graph.
+
+  Transitive entries carry no version on purpose: the version that actually
+  resolves depends on the path taken through the graph, so naming one here
+  would be a guess. Follow the link for the pinned versions on each edge.
+
+  Usage: {{< family-deps "ArturRios.Util.WebApi" >}}
+*/ -}}
+{{- $pkg := partial "family/lookup.html" (.Get 0) -}}
+{{- if not $pkg.deps -}}
+<p>None.</p>
+{{- else -}}
+<ul>
+  {{- range $pkg.deps -}}
+    {{- $dep := partial "family/lookup.html" .id -}}
+    <li>
+      <a href="../{{ $dep.library }}/"><code>{{ .id }}</code></a>
+      {{- with .version }} {{ . }}{{ end }}
+      {{- if .project }} <em>(project reference)</em>{{ end }}
+      {{- with .note }} — {{ . | markdownify }}{{ end }}
+    </li>
+  {{- end -}}
+</ul>
+  {{- $direct := slice -}}
+  {{- range $pkg.deps -}}{{ $direct = $direct | append .id }}{{- end -}}
+  {{- $all := partial "family/transitive.html" (dict "id" $pkg.id "seen" slice) -}}
+  {{- $indirect := complement $direct $all -}}
+  {{- if $indirect -}}
+<p>…and transitively
+  {{- range $i, $id := $indirect -}}
+    {{- $dep := partial "family/lookup.html" $id -}}
+    {{- if $i }},{{ end }} <a href="../{{ $dep.library }}/"><code>{{ $id }}</code></a>
+  {{- end -}}.</p>
+  {{- end -}}
+{{- end -}}

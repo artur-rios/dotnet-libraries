@@ -42,7 +42,9 @@ dotnet add package ArturRios.Output
 
 ## Family dependencies
 
-None — this is the root of the [dependency graph](../../dependencies/).
+{{< family-deps "ArturRios.Output" >}}
+
+This is the root of the [dependency graph](../../dependencies/) — everything else layers on top of it.
 
 ## Links
 

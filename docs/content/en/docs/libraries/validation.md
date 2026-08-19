@@ -32,7 +32,7 @@ dotnet add package ArturRios.Validation
 
 ## Family dependencies
 
-- [`ArturRios.Output`](../output/) 3.1.0
+{{< family-deps "ArturRios.Validation" >}}
 
 Third-party: [FluentValidation](https://docs.fluentvalidation.net/).
 

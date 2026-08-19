@@ -1,0 +1,15 @@
+{{- /*
+  Inline "Name x.y.z, Name x.y.z" list of the packages in one group. Used where
+  a sentence needs the versions rather than a table.
+
+  Usage: {{< package-versions "data" >}}
+*/ -}}
+{{- $group := .Get 0 -}}
+{{- $packages := where hugo.Data.family.packages "group" $group -}}
+{{- if not $packages -}}
+  {{- errorf "package-versions: no packages in group %q" $group -}}
+{{- end -}}
+{{- range $i, $p := $packages -}}
+  {{- if $i }}, {{ end -}}
+  <code>{{ $p.id }}</code> {{ $p.version }}
+{{- end -}}

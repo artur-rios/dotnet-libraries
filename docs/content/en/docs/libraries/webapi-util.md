@@ -32,11 +32,9 @@ dotnet add package ArturRios.Util.WebApi
 
 ## Family dependencies
 
-- [`ArturRios.Configuration`](../configuration/) 1.1.0
-- [`ArturRios.Jwt`](../jwt/) 1.1.0
-- [`ArturRios.Util`](../util/) 2.0.0
+{{< family-deps "ArturRios.Util.WebApi" >}}
 
-…and transitively `ArturRios.Extensions` and `ArturRios.Output`.
+Third-party: FluentValidation, Google.Apis.Auth, Swashbuckle.
 
 ## Links
 

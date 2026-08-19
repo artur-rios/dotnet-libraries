@@ -1,0 +1,31 @@
+{{- /*
+  The NuGet package table for one group, with a live version badge and the
+  install command.
+
+  The badge is the authority on the published version; the number in
+  data/family.yaml is what the rest of the site renders and is reviewed on the
+  date given by {{< last-reviewed >}}.
+
+  Usage: {{< package-table "core" >}}
+*/ -}}
+{{- $group := .Get 0 -}}
+{{- $packages := where hugo.Data.family.packages "group" $group -}}
+{{- if not $packages -}}
+  {{- errorf "package-table: no packages in group %q" $group -}}
+{{- end -}}
+<table>
+  <thead>
+    <tr><th>Package</th><th>Version</th><th>Install</th></tr>
+  </thead>
+  <tbody>
+  {{- range $packages }}
+    <tr>
+      <td><a href="https://www.nuget.org/packages/{{ .id }}">{{ .id }}</a></td>
+      <td><a href="https://www.nuget.org/packages/{{ .id }}"><img
+        src="https://img.shields.io/nuget/v/{{ .id }}.svg"
+        alt="{{ .id }} on NuGet" loading="lazy"></a></td>
+      <td><code>dotnet add package {{ .id }}</code></td>
+    </tr>
+  {{- end }}
+  </tbody>
+</table>

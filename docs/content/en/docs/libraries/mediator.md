@@ -35,7 +35,7 @@ dotnet add package ArturRios.Mediator
 
 ## Family dependencies
 
-- [`ArturRios.Output`](../output/) 3.1.0
+{{< family-deps "ArturRios.Mediator" >}}
 
 ## Links
 

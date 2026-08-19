@@ -1,0 +1,200 @@
+# Single source of truth for the ArturRios package family.
+#
+# Every version shown on this site is rendered from this file. When a package is
+# released, update its `version` here and update the `version` of that package
+# wherever it appears in another package's `deps` — nothing else needs editing.
+#
+# Fields
+#   id       NuGet package id
+#   version  the version currently published on nuget.org
+#   library  slug of its page under docs/libraries/ (several packages share the
+#            `data` page)
+#   group    which table it appears in on the NuGet packages page
+#   deps     family dependencies only; third-party ones are described in prose
+#            on each library page
+#            version  the version this package pins for that dependency
+#            project  true when the edge is a project reference inside the same
+#                     repository, so there is no pinned version until pack time
+
+lastReviewed: "2026-08-19"
+
+groups:
+  - key: core
+    title: Core
+  - key: app
+    title: Application building blocks
+  - key: data
+    title: Data access
+    note: >-
+      Install only the backend you use. `ArturRios.Data.MySql` is currently deferred, and is published
+      as `1.0` rather than `1.0.0`.
+
+packages:
+  - id: ArturRios.Output
+    version: "3.1.0"
+    library: output
+    group: core
+
+  - id: ArturRios.Util
+    version: "2.0.0"
+    library: util
+    group: core
+    deps:
+      - id: ArturRios.Output
+        version: "3.1.0"
+        note: result envelopes
+
+  - id: ArturRios.Extensions
+    version: "1.3.0"
+    library: extensions
+    group: core
+    deps:
+      - id: ArturRios.Util
+        version: "2.0.0"
+
+  - id: ArturRios.Configuration
+    version: "1.1.0"
+    library: configuration
+    group: core
+    deps:
+      - id: ArturRios.Extensions
+        version: "1.3.0"
+
+  - id: ArturRios.Logging
+    version: "1.1.0"
+    library: logging
+    group: core
+    deps:
+      - id: ArturRios.Extensions
+        version: "1.3.0"
+      - id: ArturRios.Util
+        version: "2.0.0"
+
+  - id: ArturRios.Jwt
+    version: "1.1.0"
+    library: jwt
+    group: app
+
+  - id: ArturRios.Validation
+    version: "1.1.0"
+    library: validation
+    group: app
+    deps:
+      - id: ArturRios.Output
+        version: "3.1.0"
+
+  - id: ArturRios.Mediator
+    version: "1.0.3"
+    library: mediator
+    group: app
+    deps:
+      - id: ArturRios.Output
+        version: "3.1.0"
+
+  - id: ArturRios.Messaging
+    version: "1.2.0"
+    library: messaging
+    group: app
+    deps:
+      - id: ArturRios.Output
+        version: "3.1.0"
+
+  - id: ArturRios.Util.WebApi
+    version: "3.3.0"
+    library: webapi-util
+    group: app
+    deps:
+      - id: ArturRios.Configuration
+        version: "1.1.0"
+      - id: ArturRios.Jwt
+        version: "1.1.0"
+      - id: ArturRios.Util
+        version: "2.0.0"
+
+  - id: ArturRios.Util.Test
+    version: "2.3.0"
+    library: test-util
+    group: app
+    deps:
+      - id: ArturRios.Configuration
+        version: "1.1.0"
+      - id: ArturRios.Data.Relational.Core
+        version: "4.0.0"
+      - id: ArturRios.Mediator
+        version: "1.0.3"
+      - id: ArturRios.Util
+        version: "2.0.0"
+      - id: ArturRios.Util.WebApi
+        version: "3.3.0"
+
+  - id: ArturRios.Data.Relational.Core
+    version: "4.0.0"
+    library: data
+    group: data
+    deps:
+      - id: ArturRios.Output
+        version: "3.1.0"
+
+  - id: ArturRios.Data.PostgreSql
+    version: "3.0.1"
+    library: data
+    group: data
+    deps:
+      - id: ArturRios.Data.Relational.Core
+        project: true
+
+  - id: ArturRios.Data.MySql
+    version: "1.0"
+    library: data
+    group: data
+    deps:
+      - id: ArturRios.Data.Relational.Core
+        project: true
+
+  - id: ArturRios.Data.Sqlite
+    version: "3.0.1"
+    library: data
+    group: data
+    deps:
+      - id: ArturRios.Data.Relational.Core
+        project: true
+
+  - id: ArturRios.Data.Dapper
+    version: "4.0.0"
+    library: data
+    group: data
+    deps:
+      - id: ArturRios.Data.Relational.Core
+        project: true
+
+  - id: ArturRios.Data.MongoDb
+    version: "2.0.0"
+    library: data
+    group: data
+    deps:
+      - id: ArturRios.Output
+        version: "3.1.0"
+
+  - id: ArturRios.Data.DynamoDb
+    version: "2.0.0"
+    library: data
+    group: data
+    deps:
+      - id: ArturRios.Output
+        version: "3.1.0"
+
+  - id: ArturRios.Data.Export
+    version: "2.0.0"
+    library: data
+    group: data
+    deps:
+      - id: ArturRios.Output
+        version: "3.1.0"
+
+  - id: ArturRios.Data.Export.Excel
+    version: "2.0.0"
+    library: data
+    group: data
+    deps:
+      - id: ArturRios.Data.Export
+        project: true

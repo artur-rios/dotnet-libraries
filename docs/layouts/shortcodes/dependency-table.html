@@ -1,0 +1,30 @@
+{{- /*
+  The full family dependency table: every package, its current version, and the
+  exact version it pins for each family dependency.
+
+  Rows follow the order of data/family.yaml, which runs roughly root-first.
+
+  Usage: {{< dependency-table >}}
+*/ -}}
+<table>
+  <thead>
+    <tr><th>Package</th><th>Version</th><th>Depends on (family only)</th></tr>
+  </thead>
+  <tbody>
+  {{- range hugo.Data.family.packages }}
+    <tr>
+      <td><code>{{ .id }}</code></td>
+      <td>{{ .version }}</td>
+      <td>
+        {{- if not .deps }}—
+        {{- else -}}
+          {{- range $i, $d := .deps -}}
+            {{- if $i }}, {{ end -}}
+            <code>{{ $d.id }}</code>{{ with $d.version }} {{ . }}{{ end }}
+          {{- end -}}
+        {{- end -}}
+      </td>
+    </tr>
+  {{- end }}
+  </tbody>
+</table>

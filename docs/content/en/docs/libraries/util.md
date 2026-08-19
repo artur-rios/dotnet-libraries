@@ -39,7 +39,7 @@ dotnet add package ArturRios.Util
 
 ## Family dependencies
 
-- [`ArturRios.Output`](../output/) 3.1.0 — result envelopes.
+{{< family-deps "ArturRios.Util" >}}
 
 ## Links
 

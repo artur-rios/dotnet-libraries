@@ -1,0 +1,16 @@
+{{- /*
+  Return every package id reachable from the given package by following deps,
+  direct and indirect. Recursive; the `seen` slice both accumulates the result
+  and guards against visiting a package twice.
+
+  Call: {{ $all := partial "family/transitive.html" (dict "id" $id "seen" slice) }}
+*/ -}}
+{{- $seen := .seen -}}
+{{- $pkg := partial "family/lookup.html" .id -}}
+{{- range $pkg.deps -}}
+  {{- if not (in $seen .id) -}}
+    {{- $seen = $seen | append .id -}}
+    {{- $seen = partial "family/transitive.html" (dict "id" .id "seen" $seen) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $seen -}}

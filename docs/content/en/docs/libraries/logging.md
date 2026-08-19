@@ -36,8 +36,7 @@ dotnet add package ArturRios.Logging
 
 ## Family dependencies
 
-- [`ArturRios.Extensions`](../extensions/) 1.3.0
-- [`ArturRios.Util`](../util/) 2.0.0
+{{< family-deps "ArturRios.Logging" >}}
 
 ## Links
 

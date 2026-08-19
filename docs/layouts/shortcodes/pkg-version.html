@@ -1,0 +1,6 @@
+{{- /*
+  A single package's current version, for use inside a sentence.
+
+  Usage: {{< pkg-version "ArturRios.Output" >}}
+*/ -}}
+{{- (partial "family/lookup.html" (.Get 0)).version -}}

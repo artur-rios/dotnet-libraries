@@ -32,7 +32,7 @@ dotnet add package ArturRios.Jwt
 
 ## Family dependencies
 
-None.
+{{< family-deps "ArturRios.Jwt" >}}
 
 ## Links
 

@@ -1,0 +1,7 @@
+{{- /*
+  The date the versions in data/family.yaml were last checked against
+  nuget.org.
+
+  Usage: {{< last-reviewed >}}
+*/ -}}
+{{- (time hugo.Data.family.lastReviewed).Format "2 January 2006" -}}

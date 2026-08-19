@@ -1,0 +1,12 @@
+{{- /*
+  Return the package entry from data/family.yaml with the given id.
+  Fails the build on an unknown id, so a typo in a shortcode is caught at build
+  time rather than rendering a blank cell.
+
+  Call: {{ $pkg := partial "family/lookup.html" "ArturRios.Util" }}
+*/ -}}
+{{- $matches := where hugo.Data.family.packages "id" . -}}
+{{- if not $matches -}}
+  {{- errorf "family: no package with id %q in data/family.yaml" . -}}
+{{- end -}}
+{{- return index $matches 0 -}}
