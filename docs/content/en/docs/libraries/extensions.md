@@ -29,7 +29,7 @@ source.
 
 ## Family dependencies
 
-- [`ArturRios.Util`](../util/) — and transitively [`ArturRios.Output`](../output/).
+- [`ArturRios.Util`](../util/) 2.0.0 — and transitively [`ArturRios.Output`](../output/) 3.1.0.
 
 ## Links
 

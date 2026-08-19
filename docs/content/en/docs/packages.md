@@ -32,8 +32,8 @@ live on nuget.org.
 
 ## Data access
 
-Install only the backend you use. `ArturRios.Data.MySql` is currently deferred and may not yet be
-published.
+Install only the backend you use. `ArturRios.Data.MySql` is currently deferred, and is published as
+`1.0` rather than `1.0.0`.
 
 | Package | Version | Install |
 |---|---|---|
@@ -52,5 +52,10 @@ published.
 Packages version independently — there is no family-wide version. Each repository releases by pushing a
 tag, which triggers its `publish-package.yml` workflow to pack and push to nuget.org and GitHub Packages.
 
-Because versions move separately, a package's family dependencies are pinned to the version that was
-current when it was last released; see the [dependency graph](dependencies/) for the edges themselves.
+Because versions move separately, a package's family dependencies are pinned to whatever was current when
+it was last released, and can fall behind as its dependencies move on. Catching up is a cascade: a
+package has to be released before its own dependents can pin the new version, so the family is brought
+current in topological waves, from `ArturRios.Output` outward.
+
+As of **19 August 2026** every family reference is at the latest stable release of its dependency. The
+[dependency graph](dependencies/) lists the exact pinned version on each edge.

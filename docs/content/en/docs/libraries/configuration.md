@@ -35,7 +35,7 @@ dotnet add package ArturRios.Configuration
 
 ## Family dependencies
 
-- [`ArturRios.Extensions`](../extensions/) — and transitively `ArturRios.Util` and `ArturRios.Output`.
+- [`ArturRios.Extensions`](../extensions/) 1.3.0 — and transitively `ArturRios.Util` 2.0.0 and `ArturRios.Output` 3.1.0.
 
 Third-party: `DotNetEnv`, `Microsoft.Extensions.*`.
 

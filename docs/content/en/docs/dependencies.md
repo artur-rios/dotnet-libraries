@@ -108,31 +108,38 @@ flowchart BT
 
 ## Dependency table
 
-Read an arrow as *"depends on"*. Versions are the ones currently referenced in each project file, and
-move independently of one another.
+Read an arrow as *"depends on"*. **Version** is the package's own current release; **depends on** lists
+the exact version it pins for each family dependency. Versions move independently — there is no
+family-wide version — so a package pins whatever was current when it was last released.
 
-| Package | Depends on (family only) |
-|---|---|
-| `ArturRios.Output` | — |
-| `ArturRios.Jwt` | — |
-| `ArturRios.Util` | `ArturRios.Output` |
-| `ArturRios.Extensions` | `ArturRios.Util` |
-| `ArturRios.Configuration` | `ArturRios.Extensions` |
-| `ArturRios.Logging` | `ArturRios.Extensions`, `ArturRios.Util` |
-| `ArturRios.Validation` | `ArturRios.Output` |
-| `ArturRios.Mediator` | `ArturRios.Output` |
-| `ArturRios.Messaging` | `ArturRios.Output` |
-| `ArturRios.Data.Relational.Core` | `ArturRios.Output` |
-| `ArturRios.Data.PostgreSql` | `ArturRios.Data.Relational.Core` |
-| `ArturRios.Data.MySql` | `ArturRios.Data.Relational.Core` |
-| `ArturRios.Data.Sqlite` | `ArturRios.Data.Relational.Core` |
-| `ArturRios.Data.Dapper` | `ArturRios.Data.Relational.Core` |
-| `ArturRios.Data.MongoDb` | `ArturRios.Output` |
-| `ArturRios.Data.DynamoDb` | `ArturRios.Output` |
-| `ArturRios.Data.Export` | `ArturRios.Output` |
-| `ArturRios.Data.Export.Excel` | `ArturRios.Data.Export` |
-| `ArturRios.Util.WebApi` | `ArturRios.Configuration`, `ArturRios.Jwt`, `ArturRios.Util` |
-| `ArturRios.Util.Test` | `ArturRios.Configuration`, `ArturRios.Data.Relational.Core`, `ArturRios.Mediator`, `ArturRios.Util`, `ArturRios.Util.WebApi` |
+As of **19 August 2026**, every family reference points at the latest stable release of its dependency.
+
+| Package | Version | Depends on (family only) |
+|---|---|---|
+| `ArturRios.Output` | 3.1.0 | — |
+| `ArturRios.Jwt` | 1.1.0 | — |
+| `ArturRios.Util` | 2.0.0 | `ArturRios.Output` 3.1.0 |
+| `ArturRios.Extensions` | 1.3.0 | `ArturRios.Util` 2.0.0 |
+| `ArturRios.Configuration` | 1.1.0 | `ArturRios.Extensions` 1.3.0 |
+| `ArturRios.Logging` | 1.1.0 | `ArturRios.Extensions` 1.3.0, `ArturRios.Util` 2.0.0 |
+| `ArturRios.Validation` | 1.1.0 | `ArturRios.Output` 3.1.0 |
+| `ArturRios.Mediator` | 1.0.3 | `ArturRios.Output` 3.1.0 |
+| `ArturRios.Messaging` | 1.2.0 | `ArturRios.Output` 3.1.0 |
+| `ArturRios.Data.Relational.Core` | 4.0.0 | `ArturRios.Output` 3.1.0 |
+| `ArturRios.Data.PostgreSql` | 3.0.1 | `ArturRios.Data.Relational.Core` |
+| `ArturRios.Data.MySql` | 1.0 | `ArturRios.Data.Relational.Core` |
+| `ArturRios.Data.Sqlite` | 3.0.1 | `ArturRios.Data.Relational.Core` |
+| `ArturRios.Data.Dapper` | 4.0.0 | `ArturRios.Data.Relational.Core` |
+| `ArturRios.Data.MongoDb` | 2.0.0 | `ArturRios.Output` 3.1.0 |
+| `ArturRios.Data.DynamoDb` | 2.0.0 | `ArturRios.Output` 3.1.0 |
+| `ArturRios.Data.Export` | 2.0.0 | `ArturRios.Output` 3.1.0 |
+| `ArturRios.Data.Export.Excel` | 2.0.0 | `ArturRios.Data.Export` |
+| `ArturRios.Util.WebApi` | 3.3.0 | `ArturRios.Configuration` 1.1.0, `ArturRios.Jwt` 1.1.0, `ArturRios.Util` 2.0.0 |
+| `ArturRios.Util.Test` | 2.3.0 | `ArturRios.Configuration` 1.1.0, `ArturRios.Data.Relational.Core` 4.0.0, `ArturRios.Mediator` 1.0.3, `ArturRios.Util` 2.0.0, `ArturRios.Util.WebApi` 3.3.0 |
+
+The `Data` rows that depend on `Relational.Core` or `Export` show no version because those edges are
+project references inside the `dotnet-data` repository — they resolve to whatever version the repository
+builds, and only become pinned package dependencies at pack time.
 
 ## A typical service
 

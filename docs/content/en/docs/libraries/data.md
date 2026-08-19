@@ -46,8 +46,11 @@ dotnet add package ArturRios.Data.PostgreSql
 
 ## Family dependencies
 
-- [`ArturRios.Output`](../output/) — every package in the set depends on it, directly or through
+- [`ArturRios.Output`](../output/) 3.1.0 — every package in the set depends on it, directly or through
   `Relational.Core` / `Export`.
+
+Current package versions: `Relational.Core` 4.0.0, `Dapper` 4.0.0, `PostgreSql` 3.0.1, `Sqlite` 3.0.1,
+`MySql` 1.0, `MongoDb` 2.0.0, `DynamoDb` 2.0.0, `Export` 2.0.0, `Export.Excel` 2.0.0.
 
 ## Links
 

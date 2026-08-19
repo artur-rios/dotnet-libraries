@@ -32,9 +32,9 @@ dotnet add package ArturRios.Util.WebApi
 
 ## Family dependencies
 
-- [`ArturRios.Configuration`](../configuration/)
-- [`ArturRios.Jwt`](../jwt/)
-- [`ArturRios.Util`](../util/)
+- [`ArturRios.Configuration`](../configuration/) 1.1.0
+- [`ArturRios.Jwt`](../jwt/) 1.1.0
+- [`ArturRios.Util`](../util/) 2.0.0
 
 …and transitively `ArturRios.Extensions` and `ArturRios.Output`.
 

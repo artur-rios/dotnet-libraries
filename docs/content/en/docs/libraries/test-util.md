@@ -34,11 +34,11 @@ dotnet add package ArturRios.Util.Test
 
 ## Family dependencies
 
-- [`ArturRios.Configuration`](../configuration/)
-- [`ArturRios.Data.Relational.Core`](../data/)
-- [`ArturRios.Mediator`](../mediator/)
-- [`ArturRios.Util`](../util/)
-- [`ArturRios.Util.WebApi`](../webapi-util/)
+- [`ArturRios.Configuration`](../configuration/) 1.1.0
+- [`ArturRios.Data.Relational.Core`](../data/) 4.0.0
+- [`ArturRios.Mediator`](../mediator/) 1.0.3
+- [`ArturRios.Util`](../util/) 2.0.0
+- [`ArturRios.Util.WebApi`](../webapi-util/) 3.3.0
 
 Third-party: `xunit`, `Microsoft.AspNetCore.Mvc.Testing`.
 
