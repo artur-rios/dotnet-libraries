@@ -29,7 +29,7 @@ Each backend is its own package, so installing SQLite support does not pull in t
 | [`ArturRios.Data.Relational.Core`](https://www.nuget.org/packages/ArturRios.Data.Relational.Core) | EF Core abstractions — repository and unit-of-work contracts, `EfRepository`, `BaseDbContext`, provider seam | `ArturRios.Output`, EF Core |
 | [`ArturRios.Data.PostgreSql`](https://www.nuget.org/packages/ArturRios.Data.PostgreSql) | PostgreSQL (Npgsql) | Relational.Core |
 | [`ArturRios.Data.Sqlite`](https://www.nuget.org/packages/ArturRios.Data.Sqlite) | SQLite | Relational.Core |
-| [`ArturRios.Data.MySql`](https://www.nuget.org/packages/ArturRios.Data.MySql) | MySQL (Pomelo) — *deferred* | Relational.Core |
+| `ArturRios.Data.MySql` | MySQL (Pomelo) — *deferred, not published* | Relational.Core |
 | [`ArturRios.Data.Dapper`](https://www.nuget.org/packages/ArturRios.Data.Dapper) | Raw-SQL reads over the EF connection | Relational.Core, Dapper |
 | [`ArturRios.Data.MongoDb`](https://www.nuget.org/packages/ArturRios.Data.MongoDb) | MongoDB document store | `ArturRios.Output`, MongoDB.Driver |
 | [`ArturRios.Data.DynamoDb`](https://www.nuget.org/packages/ArturRios.Data.DynamoDb) | AWS DynamoDB | `ArturRios.Output`, AWSSDK.DynamoDBv2 |
@@ -56,9 +56,9 @@ Current package versions: {{< package-versions "data" >}}.
 ## Links
 
 - **Documentation:** <https://artur-rios.github.io/dotnet-data>
-- **Architecture and diagrams:** <https://artur-rios.github.io/dotnet-data/architecture/>
-- **Guides:** [Relational](https://artur-rios.github.io/dotnet-data/relational/) ·
-  [MongoDB](https://artur-rios.github.io/dotnet-data/mongodb/) ·
-  [DynamoDB](https://artur-rios.github.io/dotnet-data/dynamodb/) ·
-  [Export](https://artur-rios.github.io/dotnet-data/export/)
+- **Architecture and diagrams:** <https://artur-rios.github.io/dotnet-data/docs/architecture/>
+- **Guides:** [Relational](https://artur-rios.github.io/dotnet-data/docs/relational/) ·
+  [MongoDB](https://artur-rios.github.io/dotnet-data/docs/mongodb/) ·
+  [DynamoDB](https://artur-rios.github.io/dotnet-data/docs/dynamodb/) ·
+  [Export](https://artur-rios.github.io/dotnet-data/docs/export/)
 - **Repository:** <https://github.com/artur-rios/dotnet-data>

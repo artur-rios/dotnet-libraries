@@ -4,30 +4,26 @@
 # released, update its `version` here and update the `version` of that package
 # wherever it appears in another package's `deps` — nothing else needs editing.
 #
+# scripts/verify_versions.py checks this file against nuget.org, and CI runs it
+# on every change and weekly.
+#
 # Fields
-#   id       NuGet package id
-#   version  the version currently published on nuget.org
-#   library  slug of its page under docs/libraries/ (several packages share the
-#            `data` page)
-#   group    which table it appears in on the NuGet packages page
-#   deps     family dependencies only; third-party ones are described in prose
-#            on each library page
-#            version  the version this package pins for that dependency
-#            project  true when the edge is a project reference inside the same
-#                     repository, so there is no pinned version until pack time
+#   id         NuGet package id
+#   version    the version currently published on nuget.org; omit it together
+#              with `published: false` for a package never released
+#   published  set to false for a package that is not on nuget.org at all
+#   library    slug of its page under docs/libraries/ (the nine data packages
+#              share the `data` page)
+#   group      which table it appears in on the NuGet packages page:
+#              core | app | data
+#   deps       family dependencies only; third-party ones are described in
+#              prose on each library page
+#              version  the version this package pins for that dependency
+#              project  true when the edge is a project reference inside the
+#                       same repository, so there is no pinned version until
+#                       pack time
 
 lastReviewed: "2026-08-19"
-
-groups:
-  - key: core
-    title: Core
-  - key: app
-    title: Application building blocks
-  - key: data
-    title: Data access
-    note: >-
-      Install only the backend you use. `ArturRios.Data.MySql` is currently deferred, and is published
-      as `1.0` rather than `1.0.0`.
 
 packages:
   - id: ArturRios.Output
@@ -144,7 +140,7 @@ packages:
         project: true
 
   - id: ArturRios.Data.MySql
-    version: "1.0"
+    published: false
     library: data
     group: data
     deps:

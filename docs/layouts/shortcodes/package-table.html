@@ -2,9 +2,9 @@
   The NuGet package table for one group, with a live version badge and the
   install command.
 
-  The badge is the authority on the published version; the number in
-  data/family.yaml is what the rest of the site renders and is reviewed on the
-  date given by {{< last-reviewed >}}.
+  A package marked `published: false` gets no link, no badge and no install
+  command — linking to nuget.org for a package that was never released would
+  produce a dead link.
 
   Usage: {{< package-table "core" >}}
 */ -}}
@@ -20,11 +20,16 @@
   <tbody>
   {{- range $packages }}
     <tr>
+      {{- if eq .published false }}
+      <td>{{ .id }}</td>
+      <td colspan="2"><em>Deferred — not yet published.</em></td>
+      {{- else }}
       <td><a href="https://www.nuget.org/packages/{{ .id }}">{{ .id }}</a></td>
       <td><a href="https://www.nuget.org/packages/{{ .id }}"><img
         src="https://img.shields.io/nuget/v/{{ .id }}.svg"
         alt="{{ .id }} on NuGet" loading="lazy"></a></td>
       <td><code>dotnet add package {{ .id }}</code></td>
+      {{- end }}
     </tr>
   {{- end }}
   </tbody>

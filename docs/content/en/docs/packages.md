@@ -19,8 +19,8 @@ live on nuget.org.
 
 ## Data access
 
-Install only the backend you use. `ArturRios.Data.MySql` is currently deferred, and is published as
-`1.0` rather than `1.0.0`.
+Install only the backend you use. `ArturRios.Data.MySql` is deferred — the project exists in the
+repository but has never been tagged, so it is not on nuget.org.
 
 {{< package-table "data" >}}
 

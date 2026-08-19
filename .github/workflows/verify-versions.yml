@@ -1,0 +1,55 @@
+name: Verify Versions
+
+# Checks docs/data/family.yaml against nuget.org.
+#
+# The weekly run is the important one: this repository can go stale without a
+# commit of its own, because a release in any of the twelve library
+# repositories is what makes the data file wrong.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/data/family.yaml'
+      - 'scripts/verify_versions.py'
+      - '.github/workflows/verify-versions.yml'
+  pull_request:
+    paths:
+      - 'docs/data/family.yaml'
+      - 'scripts/verify_versions.py'
+      - '.github/workflows/verify-versions.yml'
+  schedule:
+    # Mondays at 07:00 UTC
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual run'
+        required: false
+        default: 'Test run from GitHub UI'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-versions-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install PyYAML
+        run: pip install --quiet pyyaml
+
+      - name: Verify versions against nuget.org
+        run: python scripts/verify_versions.py

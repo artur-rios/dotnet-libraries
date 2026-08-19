@@ -14,7 +14,7 @@
   {{- range hugo.Data.family.packages }}
     <tr>
       <td><code>{{ .id }}</code></td>
-      <td>{{ .version }}</td>
+      <td>{{ if eq .published false }}<em>not published</em>{{ else }}{{ .version }}{{ end }}</td>
       <td>
         {{- if not .deps }}—
         {{- else -}}

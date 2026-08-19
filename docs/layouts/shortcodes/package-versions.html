@@ -1,6 +1,6 @@
 {{- /*
-  Inline "Name x.y.z, Name x.y.z" list of the packages in one group. Used where
-  a sentence needs the versions rather than a table.
+  Inline "Name x.y.z, Name x.y.z" list of the packages in one group. Packages
+  that are not published are named as deferred rather than given a version.
 
   Usage: {{< package-versions "data" >}}
 */ -}}
@@ -11,5 +11,5 @@
 {{- end -}}
 {{- range $i, $p := $packages -}}
   {{- if $i }}, {{ end -}}
-  <code>{{ $p.id }}</code> {{ $p.version }}
+  <code>{{ $p.id }}</code> {{ if eq $p.published false }}<em>(deferred)</em>{{ else }}{{ $p.version }}{{ end }}
 {{- end -}}
