@@ -97,10 +97,12 @@ These are the ideas that repeat across the family; the
 7. **Diagnostics that cross process boundaries.** Caller info and trace IDs in `ArturRios.Logging`; W3C
    `traceparent` propagation through `ArturRios.Util.WebApi` middleware and outgoing calls.
 8. **Given / When / Then tests.** xUnit throughout, with `ArturRios.Util.Test` supplying assertions,
-   in-memory fakes and environment-aware attributes.
+   in-memory fakes and environment-aware attributes. Every test class carries a `Category` trait —
+   `Unit` or `Functional` — so the two kinds run and report separately.
 9. **Identical repository layout.** `src/`, `tests/`, `docs/`, `README.md`, `LICENSE`.
-10. **Identical CI.** `run-tests.yml` on pushes and PRs, `build-docs-and-coverage-report.yml` deploying
-    docs and coverage to GitHub Pages, `publish-package.yml` packing and pushing on a tag.
+10. **Identical CI.** `run-tests.yml` on pushes and PRs, running unit and functional tests as two
+    separate jobs; `build-docs-and-coverage-report.yml` deploying docs and coverage to GitHub Pages;
+    `publish-package.yml` packing and pushing on a tag.
 11. **Consistent packaging metadata.** `net10.0`, MIT, XML docs, an `ArturRios.*` package id, and
     independent per-package versions — there is no lockstep family version.
 
@@ -117,6 +119,12 @@ npm run serve
 `npm run build` produces the static site in `docs/public`. Pushing to `main` triggers
 [`build-docs.yml`](.github/workflows/build-docs.yml), which builds it and deploys to the `gh-pages`
 branch.
+
+## Protected `main`
+
+Every repository's `main` requires a pull request, one approving review, and both CI jobs — **Unit tests**
+and **Functional tests** — to pass. Force pushes and branch deletion are refused. Administrators are exempt
+from the rules, so the repository owner keeps a bypass and nobody else has one.
 
 ## Contributing
 

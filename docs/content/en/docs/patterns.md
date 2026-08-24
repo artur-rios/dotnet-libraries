@@ -87,12 +87,27 @@ attributes and carries a trace ID; [`ArturRios.Util.WebApi`](libraries/webapi-ut
 
 ## 8. Testing conventions
 
-- Test names follow **Given / When / Then**:
+- Test names follow **Given / When / Then**, without exception:
   `GivenSpecial_WhenInspected_ThenContainNoDuplicatesAndNoWhitespace`.
 - xUnit throughout, with [`ArturRios.Util.Test`](libraries/test-util/) supplying extra assertions,
   in-memory repository and scheduler fakes, and a base class for functional web API tests.
-- Attributes such as `UnitFactAttribute` and `FunctionalFactAttribute` let a suite skip tests per
-  environment or condition, so the same suite runs locally and in CI with different reach.
+- **Every test class carries a `Category` trait**, either `Unit` or `Functional`, so the two kinds can be
+  run and reported separately:
+
+  ```bash
+  dotnet test <solution> --filter "Category=Unit"
+  dotnet test <solution> --filter "Category=Functional"
+  ```
+
+  A unit test exercises code in isolation against test doubles. A functional test reaches something real:
+  the file system, a loopback HTTP server, an in-memory ASP.NET Core host, SQLite, an ephemeral MongoDB
+  replica set, DynamoDB Local.
+
+- The `UnitFactAttribute`, `UnitTheoryAttribute`, `FunctionalFactAttribute` and
+  `FunctionalTheoryAttribute` in [`ArturRios.Util.Test`](libraries/test-util/) stamp that same `Category`
+  trait, and additionally let a suite skip tests per environment or condition. A repository that cannot
+  reference the package — anything `ArturRios.Util.Test` itself depends on — puts a plain
+  `[Trait("Category", "Unit")]` on the class instead. Both filter identically.
 
 ## 9. Repository layout
 
@@ -112,11 +127,25 @@ Three GitHub Actions workflows per repository:
 
 | Workflow | Trigger | What it does |
 |---|---|---|
-| `run-tests.yml` | pushes and pull requests | Builds and runs the xUnit suites. |
+| `run-tests.yml` | pushes and pull requests | Two jobs — **Unit tests** and **Functional tests** — each restoring, building and running its half of the suite, and each uploading its own `trx` artifact. |
 | `build-docs-and-coverage-report.yml` | pushes to `main` touching `src/`, `tests/` or `docs/` | Runs tests with coverage, generates the coverage report, builds the Hugo site and deploys it to GitHub Pages. |
 | `publish-package.yml` | pushing a tag | Packs and pushes to nuget.org and GitHub Packages. |
 
 Documentation is therefore never stale relative to `main`, and a release is a tag.
+
+Splitting the run into two jobs rather than two steps means the run graph shows which half failed before
+anything is opened, and it lets both be required independently.
+
+## 12. Protected `main`
+
+Every repository's `main` is protected the same way:
+
+- a pull request is required — nothing is pushed to `main` directly;
+- **Unit tests** and **Functional tests** must both pass;
+- one approving review is required;
+- force pushes and branch deletion are refused.
+
+Administrators are not subject to the rules, so the repository owner keeps a bypass; nobody else has one.
 
 ## 11. Consistent packaging metadata
 
