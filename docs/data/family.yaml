@@ -23,7 +23,7 @@
 #                       same repository, so there is no pinned version until
 #                       pack time
 
-lastReviewed: "2026-08-19"
+lastReviewed: "2026-08-24"
 
 packages:
   - id: ArturRios.Output
