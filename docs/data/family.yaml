@@ -23,7 +23,7 @@
 #                       same repository, so there is no pinned version until
 #                       pack time
 
-lastReviewed: "2026-08-24"
+lastReviewed: "2026-08-25"
 
 packages:
   - id: ArturRios.Output
@@ -140,7 +140,7 @@ packages:
         project: true
 
   - id: ArturRios.Data.MySql
-    published: false
+    version: "1.0.0"
     library: data
     group: data
     deps:

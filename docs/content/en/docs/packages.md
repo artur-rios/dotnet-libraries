@@ -19,8 +19,8 @@ live on nuget.org.
 
 ## Data access
 
-Install only the backend you use. `ArturRios.Data.MySql` is deferred — the project exists in the
-repository but has never been tagged, so it is not on nuget.org.
+Install only the backend you use. All nine packages are published, including
+`ArturRios.Data.MySql`, which covers both MySQL and MariaDB.
 
 {{< package-table "data" >}}
 

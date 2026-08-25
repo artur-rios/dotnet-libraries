@@ -103,6 +103,11 @@ attributes and carries a trace ID; [`ArturRios.Util.WebApi`](libraries/webapi-ut
   the file system, a loopback HTTP server, an in-memory ASP.NET Core host, SQLite, an ephemeral MongoDB
   replica set, DynamoDB Local.
 
+- A repository adds a third category, `Integration`, when a test needs a server the suite cannot
+  provision itself. Today only [`ArturRios.Data`](libraries/data/) has one: its MySQL tests read a
+  connection string from `ARTURRIOS_DATA_MYSQL_TEST_CONNECTION` and skip when it is unset, and CI
+  supplies MySQL as a service container.
+
 - The `UnitFactAttribute`, `UnitTheoryAttribute`, `FunctionalFactAttribute` and
   `FunctionalTheoryAttribute` in [`ArturRios.Util.Test`](libraries/test-util/) stamp that same `Category`
   trait, and additionally let a suite skip tests per environment or condition. A repository that cannot
@@ -127,13 +132,13 @@ Three GitHub Actions workflows per repository:
 
 | Workflow | Trigger | What it does |
 |---|---|---|
-| `run-tests.yml` | pushes and pull requests | Two jobs — **Unit tests** and **Functional tests** — each restoring, building and running its half of the suite, and each uploading its own `trx` artifact. |
-| `build-docs-and-coverage-report.yml` | pushes to `main` touching `src/`, `tests/` or `docs/` | Runs tests with coverage, generates the coverage report, builds the Hugo site and deploys it to GitHub Pages. |
+| `run-tests.yml` | pushes and pull requests | Two jobs — **Unit tests** and **Functional tests** — each restoring, building and running its half of the suite, and each uploading its own `trx` artifact. `ArturRios.Data` adds a third, **Integration tests**, against a MySQL service container. |
+| `build-docs-and-coverage-report.yml` | pushes to `main` touching `src/`, `tests/` or `docs/` | Runs tests with coverage, generates the coverage report, builds the Hugo site and deploys it to GitHub Pages. In `ArturRios.Data` it also runs on pull requests as a check, deploying only on `main`. |
 | `publish-package.yml` | pushing a tag | Packs and pushes to nuget.org and GitHub Packages. |
 
 Documentation is therefore never stale relative to `main`, and a release is a tag.
 
-Splitting the run into two jobs rather than two steps means the run graph shows which half failed before
+Splitting the run into separate jobs rather than steps means the run graph shows which half failed before
 anything is opened, and it lets both be required independently.
 
 ## 12. Protected `main`
@@ -141,7 +146,8 @@ anything is opened, and it lets both be required independently.
 Every repository's `main` is protected the same way:
 
 - a pull request is required — nothing is pushed to `main` directly;
-- **Unit tests** and **Functional tests** must both pass;
+- **Unit tests** and **Functional tests** must both pass — and **Integration tests** too, where the
+  repository has them;
 - one approving review is required;
 - force pushes and branch deletion are refused.
 
