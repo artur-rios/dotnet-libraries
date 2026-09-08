@@ -118,8 +118,8 @@ npm run serve
 ```
 
 `npm run build` produces the static site in `docs/public`. Pushing to `main` triggers
-[`build-docs.yml`](.github/workflows/build-docs.yml), which builds it and deploys to the `gh-pages`
-branch.
+[`build-docs.yml`](.github/workflows/build-docs.yml), which builds it and deploys it to GitHub Pages
+from the workflow itself.
 
 ## Protected `main`
 
