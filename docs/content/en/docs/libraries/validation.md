@@ -8,7 +8,7 @@ description: >-
 
 [![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-validation)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Validation.svg)](https://www.nuget.org/packages/ArturRios.Validation)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/artur-rios/dotnet-validation/blob/main/LICENSE)
+[![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-validation/blob/main/LICENSE)
 
 FluentValidation gives you a `ValidationResult`; applications want either a list of messages or a result
 envelope. `ArturRios.Validation` closes that gap.

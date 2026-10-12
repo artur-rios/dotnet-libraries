@@ -8,7 +8,7 @@ description: >-
 
 [![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-webapi-util)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Util.WebApi.svg)](https://www.nuget.org/packages/ArturRios.Util.WebApi)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/artur-rios/dotnet-webapi-util/blob/main/LICENSE)
+[![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-webapi-util/blob/main/LICENSE)
 
 Where the family comes together for a service: it bootstraps the host with
 [`ArturRios.Configuration`](../configuration/), authenticates with [`ArturRios.Jwt`](../jwt/), and turns

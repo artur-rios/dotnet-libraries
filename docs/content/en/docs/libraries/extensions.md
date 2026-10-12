@@ -8,7 +8,7 @@ description: >-
 
 [![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-extensions)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Extensions.svg)](https://www.nuget.org/packages/ArturRios.Extensions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/artur-rios/dotnet-extensions/blob/main/LICENSE)
+[![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-extensions/blob/main/LICENSE)
 
 A small, fully unit-tested set of extension methods that make everyday .NET work more pleasant. No new
 abstractions — just the methods the BCL leaves out.

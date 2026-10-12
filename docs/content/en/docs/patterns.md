@@ -123,7 +123,7 @@ src/      the library (and its .sln)
 tests/    xUnit test projects
 docs/     the Hugo + Docsy documentation site
 README.md overview, install, usage
-LICENSE   MIT
+LICENSE   Artur Rios Attribution License
 ```
 
 ## 10. Identical CI
@@ -155,7 +155,7 @@ Administrators are not subject to the rules, so the repository owner keeps a byp
 
 ## 11. Consistent packaging metadata
 
-Every package targets `net10.0`, is MIT licensed, ships XML documentation
+Every package targets `net10.0`, is licensed under the Artur Rios Attribution License (packed as a `LICENSE` file), ships XML documentation
 (`<DocumentationFile>`), and carries a `<PackageId>` under the `ArturRios.*` prefix with a
 `<Description>` that matches the README's opening line. Versions move independently per package —
 there is no lockstep family version.

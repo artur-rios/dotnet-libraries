@@ -27,7 +27,7 @@ want and sends you there.
 
 ## The family at a glance
 
-All libraries target **.NET 10 (`net10.0`)** and are MIT licensed.
+All libraries target **.NET 10 (`net10.0`)** and are licensed under the Artur Rios Attribution License.
 
 | Library | Package(s) | What it is |
 |---|---|---|

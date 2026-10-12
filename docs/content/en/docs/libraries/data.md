@@ -7,7 +7,7 @@ description: >-
 ---
 
 [![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-data)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/artur-rios/dotnet-data/blob/main/LICENSE)
+[![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-data/blob/main/LICENSE)
 [![Relational.Core](https://img.shields.io/nuget/v/ArturRios.Data.Relational.Core.svg?label=Relational.Core)](https://www.nuget.org/packages/ArturRios.Data.Relational.Core)
 [![MongoDb](https://img.shields.io/nuget/v/ArturRios.Data.MongoDb.svg?label=MongoDb)](https://www.nuget.org/packages/ArturRios.Data.MongoDb)
 [![Export](https://img.shields.io/nuget/v/ArturRios.Data.Export.svg?label=Export)](https://www.nuget.org/packages/ArturRios.Data.Export)

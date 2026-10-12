@@ -1,7 +1,7 @@
 # Dotnet Libraries
 
 [![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-libraries)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](./LICENSE)
 
 The index of the **ArturRios** .NET library family — twelve libraries, twenty NuGet packages, one set of
 conventions. This repository holds no code: it is the map, and the source of the site at
@@ -13,7 +13,7 @@ conventions. This repository holds no code: it is the map, and the source of the
 
 ## The libraries
 
-All target **.NET 10 (`net10.0`)** and are MIT licensed. Each lives in its own repository, with its own
+All target **.NET 10 (`net10.0`)** and are licensed under the Artur Rios Attribution License. Each lives in its own repository, with its own
 tests, its own Docsy documentation site and its own release cadence.
 
 | Library | Repository | Docs | Package(s) |
@@ -104,7 +104,7 @@ These are the ideas that repeat across the family; the
 10. **Identical CI.** `run-tests.yml` on pushes and PRs, running unit and functional tests as two
     separate jobs (three in `ArturRios.Data`, which adds integration tests against a MySQL container); `build-docs-and-coverage-report.yml` deploying docs and coverage to GitHub Pages;
     `publish-package.yml` packing and pushing on a tag.
-11. **Consistent packaging metadata.** `net10.0`, MIT, XML docs, an `ArturRios.*` package id, and
+11. **Consistent packaging metadata.** `net10.0`, the Artur Rios Attribution License (packed `LICENSE` file), XML docs, an `ArturRios.*` package id, and
     independent per-package versions — there is no lockstep family version.
 
 ## Building this site
@@ -134,4 +134,4 @@ a whole — a wrong dependency edge, a pattern worth documenting — belongs her
 
 ## Legal
 
-MIT — see [LICENSE](./LICENSE). Copyright © Artur Rios.
+This project is licensed under the [Artur Rios Attribution License](./LICENSE). It is free and open source: you may view, use, fork, modify, and extend it, provided you credit the author, Artur Rios, with a link to [artur-rios.tech](https://artur-rios.tech) or [github.com/artur-rios](https://github.com/artur-rios). Copyright © Artur Rios.

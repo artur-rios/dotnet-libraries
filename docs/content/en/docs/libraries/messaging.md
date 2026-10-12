@@ -8,7 +8,7 @@ description: >-
 
 [![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-messaging)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Messaging.svg)](https://www.nuget.org/packages/ArturRios.Messaging)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/artur-rios/dotnet-messaging/blob/main/LICENSE)
+[![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-messaging/blob/main/LICENSE)
 
 The smallest member of the family, and the one most openly under construction. Today it ships a
 transactional email service; more formats, protocols and providers are intended, and contributions are

@@ -8,7 +8,7 @@ description: >-
 
 [![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-logging)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Logging.svg)](https://www.nuget.org/packages/ArturRios.Logging)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/artur-rios/dotnet-logging/blob/main/LICENSE)
+[![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-logging/blob/main/LICENSE)
 
 A logging library that works standalone or behind the standard `ILogger` abstractions.
 

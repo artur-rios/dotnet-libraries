@@ -6,7 +6,7 @@ description: >-
   Every GitHub repository in the family, with its documentation site and issue tracker.
 ---
 
-All repositories live under [github.com/artur-rios](https://github.com/artur-rios) and are MIT licensed.
+All repositories live under [github.com/artur-rios](https://github.com/artur-rios) and are licensed under the Artur Rios Attribution License.
 Each has the same layout — `src/`, `tests/`, `docs/` — and the same three GitHub Actions workflows.
 
 | Library | Repository | Documentation | Issues |

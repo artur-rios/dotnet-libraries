@@ -8,7 +8,7 @@ description: >-
 
 [![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-mediator)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Mediator.svg)](https://www.nuget.org/packages/ArturRios.Mediator)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/artur-rios/dotnet-mediator/blob/main/LICENSE)
+[![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-mediator/blob/main/LICENSE)
 
 A lightweight implementation of the [Mediator pattern](https://refactoring.guru/design-patterns/mediator)
 giving a clean CQRS-style separation between **commands** (writes) and **queries** (reads) — with no

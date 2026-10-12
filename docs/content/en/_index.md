@@ -21,7 +21,7 @@ each other and usable one at a time.
 {{< /blocks/cover >}}
 
 {{% blocks/lead color="light" %}}
-Every library follows the same conventions: `net10.0`, MIT, one repository per library, its own Docsy
+Every library follows the same conventions: `net10.0`, the Artur Rios Attribution License, one repository per library, its own Docsy
 documentation site, and — where an operation can fail — an `ArturRios.Output` envelope instead of an
 exception.
 {{% /blocks/lead %}}

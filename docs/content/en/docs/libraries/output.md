@@ -8,7 +8,7 @@ description: >-
 
 [![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-output)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Output.svg)](https://www.nuget.org/packages/ArturRios.Output)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/artur-rios/dotnet-output/blob/main/LICENSE)
+[![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-output/blob/main/LICENSE)
 
 The root of the family. `ArturRios.Output` standardizes how an operation reports what happened: a success
 flag, messages, errors and a UTC timestamp — optionally wrapped around a payload or a page of results.

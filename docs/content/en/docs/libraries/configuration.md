@@ -8,7 +8,7 @@ description: >-
 
 [![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-configuration)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Configuration.svg)](https://www.nuget.org/packages/ArturRios.Configuration)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/artur-rios/dotnet-configuration/blob/main/LICENSE)
+[![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-configuration/blob/main/LICENSE)
 
 A lightweight configuration loader built on `Microsoft.Extensions.Configuration`. It composes several
 sources — `appsettings` and other JSON files, environment variables, `.env` files — under one simple
