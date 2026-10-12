@@ -30,6 +30,9 @@ a service can issue and verify tokens without adopting anything more.
 dotnet add package ArturRios.Jwt
 ```
 
+Also on GitHub Packages, with the same versions — see
+[Use the GitHub feed](../../packages/#use-the-github-feed).
+
 ## Family dependencies
 
 {{< family-deps "ArturRios.Jwt" >}}
