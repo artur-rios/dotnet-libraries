@@ -1,6 +1,8 @@
 name: Verify Versions
 
-# Checks docs/data/family.yaml against nuget.org.
+# Checks docs/data/family.yaml against nuget.org, and checks that GitHub
+# Packages carries every version nuget.org does (each library publishes to
+# both; the GitHub feed is read with this workflow's GITHUB_TOKEN).
 #
 # The weekly run is the important one: this repository can go stale without a
 # commit of its own, because a release in any of the twelve library
@@ -31,6 +33,7 @@ on:
 
 permissions:
   contents: read
+  packages: read
 
 concurrency:
   group: verify-versions-${{ github.ref }}
@@ -51,5 +54,7 @@ jobs:
       - name: Install PyYAML
         run: pip install --quiet pyyaml
 
-      - name: Verify versions against nuget.org
+      - name: Verify versions against nuget.org and GitHub Packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/verify_versions.py
