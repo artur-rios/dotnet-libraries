@@ -7,7 +7,8 @@ description: >-
 ---
 
 Twenty packages across twelve repositories, all targeting `net10.0`. Badges show the version currently
-live on nuget.org.
+live on nuget.org. Every package is also published to GitHub Packages with the same versions — see
+[Use the GitHub feed](#use-the-github-feed).
 
 ## Core
 
@@ -23,6 +24,51 @@ Install only the backend you use. All nine packages are published, including
 `ArturRios.Data.MySql`, which covers both MySQL and MariaDB.
 
 {{< package-table "data" >}}
+
+## Use the GitHub feed
+
+nuget.org is the default source, so the install commands above need no setup. The same versions are on
+[GitHub Packages](https://github.com/artur-rios?tab=packages), whose feed asks for authentication even
+for public packages: a personal access token (classic) with the `read:packages` scope. Register the feed
+once:
+
+```bash
+dotnet nuget add source https://nuget.pkg.github.com/artur-rios/index.json --name artur-rios --username YOUR_GITHUB_USERNAME --password YOUR_TOKEN
+```
+
+Add `--store-password-in-clear-text` on Linux and macOS, where NuGet cannot encrypt the password. Then
+install from it:
+
+```bash
+dotnet add package ArturRios.Output --source artur-rios
+```
+
+For a repository or CI, put the feed in a `nuget.config` instead and keep the token in the environment.
+In GitHub Actions the workflow's `GITHUB_TOKEN` works, given `packages: read`. The source mapping sends
+every `ArturRios.*` package to the GitHub feed and everything else to nuget.org:
+
+```xml
+<configuration>
+  <packageSources>
+    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
+    <add key="artur-rios" value="https://nuget.pkg.github.com/artur-rios/index.json" />
+  </packageSources>
+  <packageSourceCredentials>
+    <artur-rios>
+      <add key="Username" value="%GITHUB_ACTOR%" />
+      <add key="ClearTextPassword" value="%GITHUB_TOKEN%" />
+    </artur-rios>
+  </packageSourceCredentials>
+  <packageSourceMapping>
+    <packageSource key="artur-rios">
+      <package pattern="ArturRios.*" />
+    </packageSource>
+    <packageSource key="nuget.org">
+      <package pattern="*" />
+    </packageSource>
+  </packageSourceMapping>
+</configuration>
+```
 
 ## Versioning
 
