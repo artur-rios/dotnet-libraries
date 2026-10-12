@@ -16,20 +16,73 @@ conventions. This repository holds no code: it is the map, and the source of the
 All target **.NET 10 (`net10.0`)** and are licensed under the Artur Rios Attribution License. Each lives in its own repository, with its own
 tests, its own Docsy documentation site and its own release cadence.
 
-| Library | Repository | Docs | Package(s) |
-|---|---|---|---|
-| Output | [dotnet-output](https://github.com/artur-rios/dotnet-output) | [Docs](https://artur-rios.github.io/dotnet-output) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Output.svg?label=ArturRios.Output)](https://www.nuget.org/packages/ArturRios.Output) |
-| Util | [dotnet-util](https://github.com/artur-rios/dotnet-util) | [Docs](https://artur-rios.github.io/dotnet-util) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Util.svg?label=ArturRios.Util)](https://www.nuget.org/packages/ArturRios.Util) |
-| Extensions | [dotnet-extensions](https://github.com/artur-rios/dotnet-extensions) | [Docs](https://artur-rios.github.io/dotnet-extensions) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Extensions.svg?label=ArturRios.Extensions)](https://www.nuget.org/packages/ArturRios.Extensions) |
-| Configuration | [dotnet-configuration](https://github.com/artur-rios/dotnet-configuration) | [Docs](https://artur-rios.github.io/dotnet-configuration) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Configuration.svg?label=ArturRios.Configuration)](https://www.nuget.org/packages/ArturRios.Configuration) |
-| Logging | [dotnet-logging](https://github.com/artur-rios/dotnet-logging) | [Docs](https://artur-rios.github.io/dotnet-logging) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Logging.svg?label=ArturRios.Logging)](https://www.nuget.org/packages/ArturRios.Logging) |
-| JWT | [dotnet-jwt](https://github.com/artur-rios/dotnet-jwt) | [Docs](https://artur-rios.github.io/dotnet-jwt) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Jwt.svg?label=ArturRios.Jwt)](https://www.nuget.org/packages/ArturRios.Jwt) |
-| Validation | [dotnet-validation](https://github.com/artur-rios/dotnet-validation) | [Docs](https://artur-rios.github.io/dotnet-validation) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Validation.svg?label=ArturRios.Validation)](https://www.nuget.org/packages/ArturRios.Validation) |
-| Mediator | [dotnet-mediator](https://github.com/artur-rios/dotnet-mediator) | [Docs](https://artur-rios.github.io/dotnet-mediator) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Mediator.svg?label=ArturRios.Mediator)](https://www.nuget.org/packages/ArturRios.Mediator) |
-| Messaging | [dotnet-messaging](https://github.com/artur-rios/dotnet-messaging) | [Docs](https://artur-rios.github.io/dotnet-messaging) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Messaging.svg?label=ArturRios.Messaging)](https://www.nuget.org/packages/ArturRios.Messaging) |
-| Data | [dotnet-data](https://github.com/artur-rios/dotnet-data) | [Docs](https://artur-rios.github.io/dotnet-data) | [9 packages](https://artur-rios.github.io/dotnet-libraries/docs/packages/#data-access) |
-| Web API Util | [dotnet-webapi-util](https://github.com/artur-rios/dotnet-webapi-util) | [Docs](https://artur-rios.github.io/dotnet-webapi-util) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Util.WebApi.svg?label=ArturRios.Util.WebApi)](https://www.nuget.org/packages/ArturRios.Util.WebApi) |
-| Test Util | [dotnet-test-util](https://github.com/artur-rios/dotnet-test-util) | [Docs](https://artur-rios.github.io/dotnet-test-util) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Util.Test.svg?label=ArturRios.Util.Test)](https://www.nuget.org/packages/ArturRios.Util.Test) |
+| Library | Repository | Docs | NuGet | GitHub Packages |
+|---|---|---|---|---|
+| Output | [dotnet-output](https://github.com/artur-rios/dotnet-output) | [Docs](https://artur-rios.github.io/dotnet-output) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Output.svg?label=ArturRios.Output)](https://www.nuget.org/packages/ArturRios.Output) | [![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-ArturRios.Output-24292f?logo=github)](https://github.com/artur-rios/dotnet-output/pkgs/nuget/ArturRios.Output) |
+| Util | [dotnet-util](https://github.com/artur-rios/dotnet-util) | [Docs](https://artur-rios.github.io/dotnet-util) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Util.svg?label=ArturRios.Util)](https://www.nuget.org/packages/ArturRios.Util) | [![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-ArturRios.Util-24292f?logo=github)](https://github.com/artur-rios/dotnet-util/pkgs/nuget/ArturRios.Util) |
+| Extensions | [dotnet-extensions](https://github.com/artur-rios/dotnet-extensions) | [Docs](https://artur-rios.github.io/dotnet-extensions) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Extensions.svg?label=ArturRios.Extensions)](https://www.nuget.org/packages/ArturRios.Extensions) | [![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-ArturRios.Extensions-24292f?logo=github)](https://github.com/artur-rios/dotnet-extensions/pkgs/nuget/ArturRios.Extensions) |
+| Configuration | [dotnet-configuration](https://github.com/artur-rios/dotnet-configuration) | [Docs](https://artur-rios.github.io/dotnet-configuration) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Configuration.svg?label=ArturRios.Configuration)](https://www.nuget.org/packages/ArturRios.Configuration) | [![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-ArturRios.Configuration-24292f?logo=github)](https://github.com/artur-rios/dotnet-configuration/pkgs/nuget/ArturRios.Configuration) |
+| Logging | [dotnet-logging](https://github.com/artur-rios/dotnet-logging) | [Docs](https://artur-rios.github.io/dotnet-logging) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Logging.svg?label=ArturRios.Logging)](https://www.nuget.org/packages/ArturRios.Logging) | [![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-ArturRios.Logging-24292f?logo=github)](https://github.com/artur-rios/dotnet-logging/pkgs/nuget/ArturRios.Logging) |
+| JWT | [dotnet-jwt](https://github.com/artur-rios/dotnet-jwt) | [Docs](https://artur-rios.github.io/dotnet-jwt) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Jwt.svg?label=ArturRios.Jwt)](https://www.nuget.org/packages/ArturRios.Jwt) | [![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-ArturRios.Jwt-24292f?logo=github)](https://github.com/artur-rios/dotnet-jwt/pkgs/nuget/ArturRios.Jwt) |
+| Validation | [dotnet-validation](https://github.com/artur-rios/dotnet-validation) | [Docs](https://artur-rios.github.io/dotnet-validation) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Validation.svg?label=ArturRios.Validation)](https://www.nuget.org/packages/ArturRios.Validation) | [![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-ArturRios.Validation-24292f?logo=github)](https://github.com/artur-rios/dotnet-validation/pkgs/nuget/ArturRios.Validation) |
+| Mediator | [dotnet-mediator](https://github.com/artur-rios/dotnet-mediator) | [Docs](https://artur-rios.github.io/dotnet-mediator) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Mediator.svg?label=ArturRios.Mediator)](https://www.nuget.org/packages/ArturRios.Mediator) | [![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-ArturRios.Mediator-24292f?logo=github)](https://github.com/artur-rios/dotnet-mediator/pkgs/nuget/ArturRios.Mediator) |
+| Messaging | [dotnet-messaging](https://github.com/artur-rios/dotnet-messaging) | [Docs](https://artur-rios.github.io/dotnet-messaging) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Messaging.svg?label=ArturRios.Messaging)](https://www.nuget.org/packages/ArturRios.Messaging) | [![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-ArturRios.Messaging-24292f?logo=github)](https://github.com/artur-rios/dotnet-messaging/pkgs/nuget/ArturRios.Messaging) |
+| Data | [dotnet-data](https://github.com/artur-rios/dotnet-data) | [Docs](https://artur-rios.github.io/dotnet-data) | [9 packages](https://artur-rios.github.io/dotnet-libraries/docs/packages/#data-access) | [9 packages](https://github.com/artur-rios?tab=packages&repo_name=dotnet-data) |
+| Web API Util | [dotnet-webapi-util](https://github.com/artur-rios/dotnet-webapi-util) | [Docs](https://artur-rios.github.io/dotnet-webapi-util) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Util.WebApi.svg?label=ArturRios.Util.WebApi)](https://www.nuget.org/packages/ArturRios.Util.WebApi) | [![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-ArturRios.Util.WebApi-24292f?logo=github)](https://github.com/artur-rios/dotnet-webapi-util/pkgs/nuget/ArturRios.Util.WebApi) |
+| Test Util | [dotnet-test-util](https://github.com/artur-rios/dotnet-test-util) | [Docs](https://artur-rios.github.io/dotnet-test-util) | [![NuGet](https://img.shields.io/nuget/v/ArturRios.Util.Test.svg?label=ArturRios.Util.Test)](https://www.nuget.org/packages/ArturRios.Util.Test) | [![GitHub Packages](https://img.shields.io/badge/GitHub_Packages-ArturRios.Util.Test-24292f?logo=github)](https://github.com/artur-rios/dotnet-test-util/pkgs/nuget/ArturRios.Util.Test) |
+
+## Installing
+
+Every package is published to both [nuget.org](https://www.nuget.org/profiles/artur-rios) and
+[GitHub Packages](https://github.com/artur-rios?tab=packages), with the same versions on each. nuget.org
+is the default source, so nothing needs configuring:
+
+```bash
+dotnet add package ArturRios.Output
+```
+
+### Use the GitHub feed
+
+GitHub Packages asks for authentication even for public packages: a personal access token (classic)
+with the `read:packages` scope. Register the feed once:
+
+```bash
+dotnet nuget add source https://nuget.pkg.github.com/artur-rios/index.json --name artur-rios --username YOUR_GITHUB_USERNAME --password YOUR_TOKEN
+```
+
+Add `--store-password-in-clear-text` on Linux and macOS, where NuGet cannot encrypt the password. Then
+install from it:
+
+```bash
+dotnet add package ArturRios.Output --source artur-rios
+```
+
+For a repository or CI, put the feed in a `nuget.config` instead and keep the token in the environment.
+In GitHub Actions the workflow's `GITHUB_TOKEN` works, given `packages: read`. The source mapping sends
+every `ArturRios.*` package to the GitHub feed and everything else to nuget.org:
+
+```xml
+<configuration>
+  <packageSources>
+    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
+    <add key="artur-rios" value="https://nuget.pkg.github.com/artur-rios/index.json" />
+  </packageSources>
+  <packageSourceCredentials>
+    <artur-rios>
+      <add key="Username" value="%GITHUB_ACTOR%" />
+      <add key="ClearTextPassword" value="%GITHUB_TOKEN%" />
+    </artur-rios>
+  </packageSourceCredentials>
+  <packageSourceMapping>
+    <packageSource key="artur-rios">
+      <package pattern="ArturRios.*" />
+    </packageSource>
+    <packageSource key="nuget.org">
+      <package pattern="*" />
+    </packageSource>
+  </packageSourceMapping>
+</configuration>
+```
 
 ## How they depend on each other
 

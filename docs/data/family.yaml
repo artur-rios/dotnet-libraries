@@ -4,8 +4,9 @@
 # released, update its `version` here and update the `version` of that package
 # wherever it appears in another package's `deps` — nothing else needs editing.
 #
-# scripts/verify_versions.py checks this file against nuget.org, and CI runs it
-# on every change and weekly.
+# scripts/verify_versions.py checks this file against nuget.org, checks that
+# GitHub Packages carries the same versions, and CI runs it on every change and
+# weekly.
 #
 # Fields
 #   id         NuGet package id
