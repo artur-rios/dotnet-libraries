@@ -28,7 +28,7 @@ lastReviewed: "2026-10-12"
 
 packages:
   - id: ArturRios.Output
-    version: "3.2.0"
+    version: "3.3.0"
     library: output
     group: core
 
@@ -68,7 +68,7 @@ packages:
         version: "2.1.0"
 
   - id: ArturRios.Jwt
-    version: "1.2.0"
+    version: "1.4.0"
     library: jwt
     group: app
 
