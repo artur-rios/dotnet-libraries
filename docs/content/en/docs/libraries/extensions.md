@@ -6,7 +6,7 @@ description: >-
   A focused set of C# extension methods for strings, enums, collections, objects, dates, numbers and exceptions.
 ---
 
-[![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-extensions)
+[![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-extensions)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Extensions.svg)](https://www.nuget.org/packages/ArturRios.Extensions)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-extensions/blob/main/LICENSE)
 
@@ -36,6 +36,6 @@ source.
 
 ## Links
 
-- **Documentation:** <https://artur-rios.github.io/dotnet-extensions>
+- **Documentation:** <https://docs.artur-rios.tech/dotnet-extensions>
 - **Repository:** <https://github.com/artur-rios/dotnet-extensions>
 - **NuGet:** <https://www.nuget.org/packages/ArturRios.Extensions>

@@ -11,18 +11,18 @@ Each has the same layout — `src/`, `tests/`, `docs/` — and the same three Gi
 
 | Library | Repository | Documentation | Issues |
 |---|---|---|---|
-| Output | [dotnet-output](https://github.com/artur-rios/dotnet-output) | [Docs](https://artur-rios.github.io/dotnet-output) | [Issues](https://github.com/artur-rios/dotnet-output/issues) |
-| Util | [dotnet-util](https://github.com/artur-rios/dotnet-util) | [Docs](https://artur-rios.github.io/dotnet-util) | [Issues](https://github.com/artur-rios/dotnet-util/issues) |
-| Extensions | [dotnet-extensions](https://github.com/artur-rios/dotnet-extensions) | [Docs](https://artur-rios.github.io/dotnet-extensions) | [Issues](https://github.com/artur-rios/dotnet-extensions/issues) |
-| Configuration | [dotnet-configuration](https://github.com/artur-rios/dotnet-configuration) | [Docs](https://artur-rios.github.io/dotnet-configuration) | [Issues](https://github.com/artur-rios/dotnet-configuration/issues) |
-| Logging | [dotnet-logging](https://github.com/artur-rios/dotnet-logging) | [Docs](https://artur-rios.github.io/dotnet-logging) | [Issues](https://github.com/artur-rios/dotnet-logging/issues) |
-| JWT | [dotnet-jwt](https://github.com/artur-rios/dotnet-jwt) | [Docs](https://artur-rios.github.io/dotnet-jwt) | [Issues](https://github.com/artur-rios/dotnet-jwt/issues) |
-| Validation | [dotnet-validation](https://github.com/artur-rios/dotnet-validation) | [Docs](https://artur-rios.github.io/dotnet-validation) | [Issues](https://github.com/artur-rios/dotnet-validation/issues) |
-| Mediator | [dotnet-mediator](https://github.com/artur-rios/dotnet-mediator) | [Docs](https://artur-rios.github.io/dotnet-mediator) | [Issues](https://github.com/artur-rios/dotnet-mediator/issues) |
-| Messaging | [dotnet-messaging](https://github.com/artur-rios/dotnet-messaging) | [Docs](https://artur-rios.github.io/dotnet-messaging) | [Issues](https://github.com/artur-rios/dotnet-messaging/issues) |
-| Data | [dotnet-data](https://github.com/artur-rios/dotnet-data) | [Docs](https://artur-rios.github.io/dotnet-data) | [Issues](https://github.com/artur-rios/dotnet-data/issues) |
-| Web API Util | [dotnet-webapi-util](https://github.com/artur-rios/dotnet-webapi-util) | [Docs](https://artur-rios.github.io/dotnet-webapi-util) | [Issues](https://github.com/artur-rios/dotnet-webapi-util/issues) |
-| Test Util | [dotnet-test-util](https://github.com/artur-rios/dotnet-test-util) | [Docs](https://artur-rios.github.io/dotnet-test-util) | [Issues](https://github.com/artur-rios/dotnet-test-util/issues) |
+| Output | [dotnet-output](https://github.com/artur-rios/dotnet-output) | [Docs](https://docs.artur-rios.tech/dotnet-output) | [Issues](https://github.com/artur-rios/dotnet-output/issues) |
+| Util | [dotnet-util](https://github.com/artur-rios/dotnet-util) | [Docs](https://docs.artur-rios.tech/dotnet-util) | [Issues](https://github.com/artur-rios/dotnet-util/issues) |
+| Extensions | [dotnet-extensions](https://github.com/artur-rios/dotnet-extensions) | [Docs](https://docs.artur-rios.tech/dotnet-extensions) | [Issues](https://github.com/artur-rios/dotnet-extensions/issues) |
+| Configuration | [dotnet-configuration](https://github.com/artur-rios/dotnet-configuration) | [Docs](https://docs.artur-rios.tech/dotnet-configuration) | [Issues](https://github.com/artur-rios/dotnet-configuration/issues) |
+| Logging | [dotnet-logging](https://github.com/artur-rios/dotnet-logging) | [Docs](https://docs.artur-rios.tech/dotnet-logging) | [Issues](https://github.com/artur-rios/dotnet-logging/issues) |
+| JWT | [dotnet-jwt](https://github.com/artur-rios/dotnet-jwt) | [Docs](https://docs.artur-rios.tech/dotnet-jwt) | [Issues](https://github.com/artur-rios/dotnet-jwt/issues) |
+| Validation | [dotnet-validation](https://github.com/artur-rios/dotnet-validation) | [Docs](https://docs.artur-rios.tech/dotnet-validation) | [Issues](https://github.com/artur-rios/dotnet-validation/issues) |
+| Mediator | [dotnet-mediator](https://github.com/artur-rios/dotnet-mediator) | [Docs](https://docs.artur-rios.tech/dotnet-mediator) | [Issues](https://github.com/artur-rios/dotnet-mediator/issues) |
+| Messaging | [dotnet-messaging](https://github.com/artur-rios/dotnet-messaging) | [Docs](https://docs.artur-rios.tech/dotnet-messaging) | [Issues](https://github.com/artur-rios/dotnet-messaging/issues) |
+| Data | [dotnet-data](https://github.com/artur-rios/dotnet-data) | [Docs](https://docs.artur-rios.tech/dotnet-data) | [Issues](https://github.com/artur-rios/dotnet-data/issues) |
+| Web API Util | [dotnet-webapi-util](https://github.com/artur-rios/dotnet-webapi-util) | [Docs](https://docs.artur-rios.tech/dotnet-webapi-util) | [Issues](https://github.com/artur-rios/dotnet-webapi-util/issues) |
+| Test Util | [dotnet-test-util](https://github.com/artur-rios/dotnet-test-util) | [Docs](https://docs.artur-rios.tech/dotnet-test-util) | [Issues](https://github.com/artur-rios/dotnet-test-util/issues) |
 
 ## This site
 

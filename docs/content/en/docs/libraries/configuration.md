@@ -6,7 +6,7 @@ description: >-
   Composable configuration loading from JSON files, environment variables and .env files, with clear precedence.
 ---
 
-[![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-configuration)
+[![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-configuration)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Configuration.svg)](https://www.nuget.org/packages/ArturRios.Configuration)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-configuration/blob/main/LICENSE)
 
@@ -44,6 +44,6 @@ Third-party: `DotNetEnv`, `Microsoft.Extensions.*`.
 
 ## Links
 
-- **Documentation:** <https://artur-rios.github.io/dotnet-configuration>
+- **Documentation:** <https://docs.artur-rios.tech/dotnet-configuration>
 - **Repository:** <https://github.com/artur-rios/dotnet-configuration>
 - **NuGet:** <https://www.nuget.org/packages/ArturRios.Configuration>

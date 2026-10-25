@@ -6,7 +6,7 @@ description: >-
   Console and file loggers with automatic caller information, custom levels, trace IDs and Microsoft.Extensions.Logging integration.
 ---
 
-[![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-logging)
+[![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-logging)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Logging.svg)](https://www.nuget.org/packages/ArturRios.Logging)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-logging/blob/main/LICENSE)
 
@@ -43,6 +43,6 @@ Also on GitHub Packages, with the same versions — see
 
 ## Links
 
-- **Documentation:** <https://artur-rios.github.io/dotnet-logging>
+- **Documentation:** <https://docs.artur-rios.tech/dotnet-logging>
 - **Repository:** <https://github.com/artur-rios/dotnet-logging>
 - **NuGet:** <https://www.nuget.org/packages/ArturRios.Logging>

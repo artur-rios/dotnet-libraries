@@ -6,7 +6,7 @@ description: >-
   CQRS-style command and query dispatch on top of the built-in dependency injection container.
 ---
 
-[![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-mediator)
+[![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-mediator)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Mediator.svg)](https://www.nuget.org/packages/ArturRios.Mediator)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-mediator/blob/main/LICENSE)
 
@@ -42,6 +42,6 @@ Also on GitHub Packages, with the same versions — see
 
 ## Links
 
-- **Documentation:** <https://artur-rios.github.io/dotnet-mediator>
+- **Documentation:** <https://docs.artur-rios.tech/dotnet-mediator>
 - **Repository:** <https://github.com/artur-rios/dotnet-mediator>
 - **NuGet:** <https://www.nuget.org/packages/ArturRios.Mediator>
