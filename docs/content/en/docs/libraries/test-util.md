@@ -32,9 +32,6 @@ Test names across the family follow **Given / When / Then**, e.g.
 dotnet add package ArturRios.Util.Test
 ```
 
-Also on GitHub Packages, with the same versions — see
-[Use the GitHub feed](../../packages/#use-the-github-feed).
-
 ## Family dependencies
 
 {{< family-deps "ArturRios.Util.Test" >}}

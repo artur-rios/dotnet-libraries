@@ -44,9 +44,6 @@ See the [dependency graph](../../dependencies/#inside-arturriosdata) for how the
 dotnet add package ArturRios.Data.PostgreSql
 ```
 
-Also on GitHub Packages, with the same versions — see
-[Use the GitHub feed](../../packages/#use-the-github-feed).
-
 ## Family dependencies
 
 Every package in the set depends on [`ArturRios.Output`](../output/), directly or through

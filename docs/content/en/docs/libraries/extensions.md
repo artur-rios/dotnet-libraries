@@ -24,9 +24,6 @@ Extension methods over **strings**, **enums**, **collections**, **objects**, **d
 dotnet add package ArturRios.Extensions
 ```
 
-Also on GitHub Packages, with the same versions — see
-[Use the GitHub feed](../../packages/#use-the-github-feed).
-
 It can also be consumed as a Git submodule and referenced as a project, if you would rather build from
 source.
 

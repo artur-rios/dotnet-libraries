@@ -37,9 +37,6 @@ CustomConsole.WriteCharLine('=', 40);   // 40 equals signs
 dotnet add package ArturRios.Util
 ```
 
-Also on GitHub Packages, with the same versions — see
-[Use the GitHub feed](../../packages/#use-the-github-feed).
-
 ## Family dependencies
 
 {{< family-deps "ArturRios.Util" >}}
