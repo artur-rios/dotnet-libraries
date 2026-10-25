@@ -7,7 +7,8 @@ description: >-
 ---
 
 All repositories live under [github.com/artur-rios](https://github.com/artur-rios) and are licensed under the Artur Rios Attribution License.
-Each has the same layout — `src/`, `tests/`, `docs/` — and the same three GitHub Actions workflows.
+Each has the same layout — `src/`, `tests/`, `docs/` — and the same pipeline: a `yggdrasil.yml` with the `test` and `coverage` checks, a docs site served at
+`docs.artur-rios.tech/<library>/`, and releases by an annotated tag on `main`.
 
 | Library | Repository | Documentation | Issues |
 |---|---|---|---|
