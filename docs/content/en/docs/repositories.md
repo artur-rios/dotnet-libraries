@@ -3,10 +3,12 @@ title: Repositories
 linkTitle: Repositories
 weight: 50
 description: >-
-  Every GitHub repository in the family, with its documentation site and issue tracker.
+  Every repository in the family, with its documentation site and issue tracker.
 ---
 
-All repositories live under [github.com/artur-rios](https://github.com/artur-rios) and are licensed under the Artur Rios Attribution License.
+All repositories are hosted at [git.techcraftsmen.net/artur-rios](https://git.techcraftsmen.net/artur-rios), and GitHub
+([github.com/artur-rios](https://github.com/artur-rios)) is a read-only mirror of them. They are licensed under the Artur Rios Attribution License.
+The links below go to the mirror.
 Each has the same layout — `src/`, `tests/`, `docs/` — and the same pipeline: a `yggdrasil.yml` with the `test` and `coverage` checks, a docs site served at
 `docs.artur-rios.tech/<library>/`, and releases by an annotated tag on `main`.
 

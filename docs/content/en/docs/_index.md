@@ -22,7 +22,7 @@ want and sends you there.
 | Read a one-page summary of every library | [Libraries](libraries/) |
 | See how the packages depend on each other | [Dependency graph](dependencies/) |
 | Understand the ideas that repeat across the family | [Shared patterns](patterns/) |
-| Find a GitHub repository | [Repositories](repositories/) |
+| Find a repository (hosted at git.techcraftsmen.net, mirrored on GitHub) | [Repositories](repositories/) |
 | Find a NuGet package | [NuGet packages](packages/) |
 | Find the documentation of another project | [Other documentation sites](../#other-documentation-sites) |
 
