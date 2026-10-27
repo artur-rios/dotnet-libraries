@@ -128,17 +128,23 @@ LICENSE   Artur Rios Attribution License
 
 ## 10. Identical CI
 
-Three GitHub Actions workflows per repository:
+Every repository has a `yggdrasil.yml` at its root, which Jenkins reads (on Forgejo, with GitHub as a read-only mirror), and the same
+scripts under `ci/`, which run on a developer's machine too:
 
-| Workflow | Trigger | What it does |
+| Part | Trigger | What it does |
 |---|---|---|
-| `run-tests.yml` | pushes and pull requests | Two jobs — **Unit tests** and **Functional tests** — each restoring, building and running its half of the suite, and each uploading its own `trx` artifact. `ArturRios.Data` adds a third, **Integration tests**, against a MySQL service container. |
-| `build-docs-and-coverage-report.yml` | pushes to `main` touching `src/`, `tests/` or `docs/` | Runs tests with coverage, generates the coverage report, builds the Hugo site and deploys it to GitHub Pages. In `ArturRios.Data` it also runs on pull requests as a check, deploying only on `main`. |
-| `publish-package.yml` | pushing a tag | Packs and pushes to nuget.org and GitHub Packages. |
+| `test` check (`ci/test.sh`) | pull requests | Checks the formatting, builds, and runs the **Unit** and **Functional** tests one category after the other. A test with no `Category` trait fails it. `ArturRios.Data` also runs its **Integration** tests against a MySQL container. |
+| `coverage` check (`ci/coverage.sh`) | pull requests | Runs the tests with coverage collected and makes the HTML coverage report. |
+| The docs site | a push to `main` | Builds the Hugo site together with the coverage report into an image, served at `docs.artur-rios.tech/<library>/` (the report at `/coverage-report/`). |
+| `publish.nuget` (`ci/pack.sh`) | the owner pushes an annotated tag on `main` | Packs the package at the tag's version and pushes it to nuget.org. The tag is the bare `<version>`, or `<PackageId>@<version>` for `ArturRios.Data`, whose packages each have a version of their own. Packing fails when the csproj's `<Version>` is not the tag's. |
+
+On top of them, the branch policy requires a `release/<version>` pull request into `main` to carry that version in
+the csproj (the release-version gate; `ArturRios.Data` has none, since each package is versioned apart), and
+Renovate, not Dependabot, opens the dependency-update pull requests.
 
 Documentation is therefore never stale relative to `main`, and a release is a tag.
 
-Splitting the run into separate jobs rather than steps means the run graph shows which half failed before
+Splitting the run into separate checks rather than steps means the run shows which half failed before
 anything is opened, and it lets both be required independently.
 
 ## 12. Protected `main`
@@ -146,12 +152,9 @@ anything is opened, and it lets both be required independently.
 Every repository's `main` is protected the same way:
 
 - a pull request is required — nothing is pushed to `main` directly;
-- **Unit tests** and **Functional tests** must both pass — and **Integration tests** too, where the
-  repository has them;
-- one approving review is required;
+- the **test** and **coverage** checks and the branch policy must pass;
+- only `release/*` branches can be merged into it;
 - force pushes and branch deletion are refused.
-
-Administrators are not subject to the rules, so the repository owner keeps a bypass; nobody else has one.
 
 ## 11. Consistent packaging metadata
 

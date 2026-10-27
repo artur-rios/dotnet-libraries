@@ -6,7 +6,7 @@ description: >-
   The result envelopes the whole family returns — ProcessOutput, DataOutput<T> and PaginatedOutput<T>.
 ---
 
-[![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-output)
+[![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-output)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Output.svg)](https://www.nuget.org/packages/ArturRios.Output)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-output/blob/main/LICENSE)
 
@@ -40,9 +40,6 @@ if (!output.Success) { /* output.Errors has the reasons */ }
 dotnet add package ArturRios.Output
 ```
 
-Also on GitHub Packages, with the same versions — see
-[Use the GitHub feed](../../packages/#use-the-github-feed).
-
 ## Family dependencies
 
 {{< family-deps "ArturRios.Output" >}}
@@ -51,6 +48,6 @@ This is the root of the [dependency graph](../../dependencies/) — everything e
 
 ## Links
 
-- **Documentation:** <https://artur-rios.github.io/dotnet-output>
+- **Documentation:** <https://docs.artur-rios.tech/dotnet-output>
 - **Repository:** <https://github.com/artur-rios/dotnet-output>
 - **NuGet:** <https://www.nuget.org/packages/ArturRios.Output>

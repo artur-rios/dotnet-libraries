@@ -1,4 +1,4 @@
-baseURL = 'https://artur-rios.github.io/dotnet-libraries/'
+baseURL = 'https://docs.artur-rios.tech/dotnet-libraries/'
 title = 'Dotnet Libraries'
 
 # Docsy is installed as the @docsy/theme NPM package (see package.json)

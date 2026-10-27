@@ -6,7 +6,7 @@ description: >-
   Messaging formats and protocols for .NET — currently a Mailgun-backed email service.
 ---
 
-[![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-messaging)
+[![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-messaging)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Messaging.svg)](https://www.nuget.org/packages/ArturRios.Messaging)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-messaging/blob/main/LICENSE)
 
@@ -33,15 +33,12 @@ service.
 dotnet add package ArturRios.Messaging
 ```
 
-Also on GitHub Packages, with the same versions — see
-[Use the GitHub feed](../../packages/#use-the-github-feed).
-
 ## Family dependencies
 
 {{< family-deps "ArturRios.Messaging" >}}
 
 ## Links
 
-- **Documentation:** <https://artur-rios.github.io/dotnet-messaging>
+- **Documentation:** <https://docs.artur-rios.tech/dotnet-messaging>
 - **Repository:** <https://github.com/artur-rios/dotnet-messaging>
 - **NuGet:** <https://www.nuget.org/packages/ArturRios.Messaging>

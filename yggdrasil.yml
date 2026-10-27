@@ -1,0 +1,18 @@
+# The pipeline file of dotnet-libraries, the index of the .NET library family, and of its site. One file, two
+# catalog entries: the repository (dotnet-libraries: check verify) and its site (dotnet-libraries-docs: no check;
+# the image is built from the Dockerfile). Each job runs only its own entry's checks. Reference: yggdrasil's
+# docs/catalog.md, "Repository pipeline file". Check it where the catalog is, in the yggdrasil checkout:
+#   python3 scripts/pipeline_config.py describe dotnet-libraries <this repository's checkout>
+#   python3 scripts/pipeline_config.py describe dotnet-libraries-docs <this repository's checkout>
+# The scripts under ci/ run from the repository's root, so you can run them on your machine too.
+
+checks:
+  verify:                                # docs/data/family.yaml against nuget.org (ci/verify.sh)
+    image: python:3.14.9-slim@sha256:35caba83af2fe6da9a5d922f9b0156f21d1246a48278c58a08bd253303ba42e8
+    run: ci/verify.sh
+    # The data file goes stale when a library is released, not only when this repository changes, but the old
+    # weekly run is gone: re-run the check (or change the file) after a release.
+    paths:
+      - docs/data/family.yaml
+      - scripts/verify_versions.py
+      - ci/verify.sh

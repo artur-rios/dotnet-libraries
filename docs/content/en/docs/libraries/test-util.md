@@ -6,7 +6,7 @@ description: >-
   xUnit test support — extra assertions, environment-aware attributes, in-memory fakes and a functional web API test base.
 ---
 
-[![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-test-util)
+[![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-test-util)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Util.Test.svg)](https://www.nuget.org/packages/ArturRios.Util.Test)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-test-util/blob/main/LICENSE)
 
@@ -32,9 +32,6 @@ Test names across the family follow **Given / When / Then**, e.g.
 dotnet add package ArturRios.Util.Test
 ```
 
-Also on GitHub Packages, with the same versions — see
-[Use the GitHub feed](../../packages/#use-the-github-feed).
-
 ## Family dependencies
 
 {{< family-deps "ArturRios.Util.Test" >}}
@@ -43,6 +40,6 @@ Third-party: `xunit`, `Microsoft.AspNetCore.Mvc.Testing`.
 
 ## Links
 
-- **Documentation:** <https://artur-rios.github.io/dotnet-test-util>
+- **Documentation:** <https://docs.artur-rios.tech/dotnet-test-util>
 - **Repository:** <https://github.com/artur-rios/dotnet-test-util>
 - **NuGet:** <https://www.nuget.org/packages/ArturRios.Util.Test>

@@ -6,7 +6,7 @@ description: >-
   A modular data-access toolkit — nine packages covering EF Core, Dapper, MongoDB, DynamoDB and file export.
 ---
 
-[![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-data)
+[![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-data)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-data/blob/main/LICENSE)
 [![Relational.Core](https://img.shields.io/nuget/v/ArturRios.Data.Relational.Core.svg?label=Relational.Core)](https://www.nuget.org/packages/ArturRios.Data.Relational.Core)
 [![MongoDb](https://img.shields.io/nuget/v/ArturRios.Data.MongoDb.svg?label=MongoDb)](https://www.nuget.org/packages/ArturRios.Data.MongoDb)
@@ -44,9 +44,6 @@ See the [dependency graph](../../dependencies/#inside-arturriosdata) for how the
 dotnet add package ArturRios.Data.PostgreSql
 ```
 
-Also on GitHub Packages, with the same versions — see
-[Use the GitHub feed](../../packages/#use-the-github-feed).
-
 ## Family dependencies
 
 Every package in the set depends on [`ArturRios.Output`](../output/), directly or through
@@ -58,10 +55,10 @@ Current package versions: {{< package-versions "data" >}}.
 
 ## Links
 
-- **Documentation:** <https://artur-rios.github.io/dotnet-data>
-- **Architecture and diagrams:** <https://artur-rios.github.io/dotnet-data/docs/architecture/>
-- **Guides:** [Relational](https://artur-rios.github.io/dotnet-data/docs/relational/) ·
-  [MongoDB](https://artur-rios.github.io/dotnet-data/docs/mongodb/) ·
-  [DynamoDB](https://artur-rios.github.io/dotnet-data/docs/dynamodb/) ·
-  [Export](https://artur-rios.github.io/dotnet-data/docs/export/)
+- **Documentation:** <https://docs.artur-rios.tech/dotnet-data>
+- **Architecture and diagrams:** <https://docs.artur-rios.tech/dotnet-data/docs/architecture/>
+- **Guides:** [Relational](https://docs.artur-rios.tech/dotnet-data/docs/relational/) ·
+  [MongoDB](https://docs.artur-rios.tech/dotnet-data/docs/mongodb/) ·
+  [DynamoDB](https://docs.artur-rios.tech/dotnet-data/docs/dynamodb/) ·
+  [Export](https://docs.artur-rios.tech/dotnet-data/docs/export/)
 - **Repository:** <https://github.com/artur-rios/dotnet-data>

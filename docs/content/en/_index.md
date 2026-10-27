@@ -44,3 +44,37 @@ convention-driven CI — the ideas that repeat across the family.
 {{% /blocks/feature %}}
 
 {{< /blocks/section >}}
+
+{{% blocks/section color="light" %}}
+## Other documentation sites
+
+Every documentation site of the family is served from `docs.artur-rios.tech`, one path each. This site is the index
+of them: the bare address of the host comes here.
+
+### The libraries
+
+Each library has its own site, with its API reference, guides and coverage report.
+
+- [dotnet-output docs](https://docs.artur-rios.tech/dotnet-output/) — Output
+- [dotnet-util docs](https://docs.artur-rios.tech/dotnet-util/) — Util
+- [dotnet-extensions docs](https://docs.artur-rios.tech/dotnet-extensions/) — Extensions
+- [dotnet-configuration docs](https://docs.artur-rios.tech/dotnet-configuration/) — Configuration
+- [dotnet-logging docs](https://docs.artur-rios.tech/dotnet-logging/) — Logging
+- [dotnet-jwt docs](https://docs.artur-rios.tech/dotnet-jwt/) — JWT
+- [dotnet-validation docs](https://docs.artur-rios.tech/dotnet-validation/) — Validation
+- [dotnet-mediator docs](https://docs.artur-rios.tech/dotnet-mediator/) — Mediator
+- [dotnet-messaging docs](https://docs.artur-rios.tech/dotnet-messaging/) — Messaging
+- [dotnet-data docs](https://docs.artur-rios.tech/dotnet-data/) — Data
+- [dotnet-webapi-util docs](https://docs.artur-rios.tech/dotnet-webapi-util/) — Web API Util
+- [dotnet-test-util docs](https://docs.artur-rios.tech/dotnet-test-util/) — Test Util
+
+### Everything else
+
+The documentation sites of the other projects.
+
+- [Heimdall API docs](https://docs.artur-rios.tech/heimdall-api/)
+- [Heimdall docs](https://docs.artur-rios.tech/heimdall-docs/)
+- [Fortuna docs](https://docs.artur-rios.tech/fortuna-docs/)
+- [Alexandria docs](https://docs.artur-rios.tech/alexandria-docs/)
+- [Orpheus docs](https://docs.artur-rios.tech/orpheus/)
+{{% /blocks/section %}}

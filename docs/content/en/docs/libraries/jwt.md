@@ -6,7 +6,7 @@ description: >-
   A minimal API for creating, validating and reading JSON Web Tokens, with signing-key rotation.
 ---
 
-[![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-jwt)
+[![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-jwt)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Jwt.svg)](https://www.nuget.org/packages/ArturRios.Jwt)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-jwt/blob/main/LICENSE)
 
@@ -30,15 +30,12 @@ a service can issue and verify tokens without adopting anything more.
 dotnet add package ArturRios.Jwt
 ```
 
-Also on GitHub Packages, with the same versions — see
-[Use the GitHub feed](../../packages/#use-the-github-feed).
-
 ## Family dependencies
 
 {{< family-deps "ArturRios.Jwt" >}}
 
 ## Links
 
-- **Documentation:** <https://artur-rios.github.io/dotnet-jwt>
+- **Documentation:** <https://docs.artur-rios.tech/dotnet-jwt>
 - **Repository:** <https://github.com/artur-rios/dotnet-jwt>
 - **NuGet:** <https://www.nuget.org/packages/ArturRios.Jwt>

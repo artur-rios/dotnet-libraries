@@ -6,7 +6,7 @@ description: >-
   General-purpose helpers: hashing, flow control, randomness, files, HTTP, maths, regex and console output.
 ---
 
-[![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-util)
+[![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-util)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Util.svg)](https://www.nuget.org/packages/ArturRios.Util)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-util/blob/main/LICENSE)
 
@@ -37,15 +37,12 @@ CustomConsole.WriteCharLine('=', 40);   // 40 equals signs
 dotnet add package ArturRios.Util
 ```
 
-Also on GitHub Packages, with the same versions — see
-[Use the GitHub feed](../../packages/#use-the-github-feed).
-
 ## Family dependencies
 
 {{< family-deps "ArturRios.Util" >}}
 
 ## Links
 
-- **Documentation:** <https://artur-rios.github.io/dotnet-util>
+- **Documentation:** <https://docs.artur-rios.tech/dotnet-util>
 - **Repository:** <https://github.com/artur-rios/dotnet-util>
 - **NuGet:** <https://www.nuget.org/packages/ArturRios.Util>

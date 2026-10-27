@@ -6,7 +6,7 @@ description: >-
   A thin, opinionated model-validation layer over FluentValidation that returns error arrays or Output envelopes.
 ---
 
-[![Docs](https://img.shields.io/badge/docs-website-blue)](https://artur-rios.github.io/dotnet-validation)
+[![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-validation)
 [![NuGet](https://img.shields.io/nuget/v/ArturRios.Validation.svg)](https://www.nuget.org/packages/ArturRios.Validation)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](https://github.com/artur-rios/dotnet-validation/blob/main/LICENSE)
 
@@ -30,9 +30,6 @@ in its default messages.
 dotnet add package ArturRios.Validation
 ```
 
-Also on GitHub Packages, with the same versions — see
-[Use the GitHub feed](../../packages/#use-the-github-feed).
-
 ## Family dependencies
 
 {{< family-deps "ArturRios.Validation" >}}
@@ -41,6 +38,6 @@ Third-party: [FluentValidation](https://docs.fluentvalidation.net/).
 
 ## Links
 
-- **Documentation:** <https://artur-rios.github.io/dotnet-validation>
+- **Documentation:** <https://docs.artur-rios.tech/dotnet-validation>
 - **Repository:** <https://github.com/artur-rios/dotnet-validation>
 - **NuGet:** <https://www.nuget.org/packages/ArturRios.Validation>
