@@ -1,19 +1,11 @@
 # Dotnet Libraries
 
-> [!NOTE]
-> This is the real, open-source code of dotnet-libraries. Its home is Forgejo, at
-> https://git.techcraftsmen.net/artur-rios/dotnet-libraries; the copy on GitHub is a read-only mirror, for viewing only, and
-> its issues and pull requests are not followed. If you want to contribute, email me at
-> arturdev@duck.com.
-
 [![Docs](https://img.shields.io/badge/docs-website-blue)](https://docs.artur-rios.tech/dotnet-libraries)
 [![License: Attribution](https://img.shields.io/badge/License-Attribution-blue.svg)](./LICENSE)
 
 The index of the **ArturRios** .NET library family — twelve libraries, twenty NuGet packages, one set of
 conventions. This repository holds no code: it is the map, and the source of the site at
 <https://docs.artur-rios.tech/dotnet-libraries>.
-
-This repository lives at <https://git.techcraftsmen.net/artur-rios/dotnet-libraries>. The GitHub repository is a read-only mirror of it.
 
 - 📚 **Site:** <https://docs.artur-rios.tech/dotnet-libraries>
 - 🧩 **Dependency graph:** <https://docs.artur-rios.tech/dotnet-libraries/docs/dependencies/>
@@ -154,8 +146,8 @@ deletion are refused.
 
 ## Contributing
 
-Open the issue or pull request on the repository of the library it concerns. Anything about the family as
-a whole — a wrong dependency edge, a pattern worth documenting — belongs here.
+The GitHub repository is a read-only mirror for the real, open-source code of dotnet-libraries. Its home is Forgejo, at
+https://git.techcraftsmen.net/artur-rios/dotnet-libraries. If you want to contribute, e-mail me at arturdev@duck.com.
 
 ## Legal
 
