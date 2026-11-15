@@ -23,139 +23,115 @@
 #                       same repository, so there is no pinned version until
 #                       pack time
 
-lastReviewed: "2026-10-19"
+lastReviewed: "2026-11-15"
 
 packages:
   - id: ArturRios.Output
-    version: "3.3.0"
+    version: "3.3.2"
     library: output
     group: core
 
   - id: ArturRios.Util
-    version: "2.1.0"
+    version: "2.2.1"
     library: util
     group: core
     deps:
       - id: ArturRios.Output
-        version: "3.2.0"
+        version: "3.3.1"
         note: result envelopes
 
   - id: ArturRios.Extensions
-    version: "1.4.0"
+    version: "1.4.2"
     library: extensions
     group: core
     deps:
       - id: ArturRios.Util
-        version: "2.1.0"
+        version: "2.2.0"
 
   - id: ArturRios.Configuration
-    version: "1.2.0"
+    version: "2.0.1"
     library: configuration
     group: core
     deps:
       - id: ArturRios.Extensions
-        version: "1.4.0"
+        version: "1.4.1"
 
   - id: ArturRios.Logging
-    version: "2.0.0"
+    version: "2.0.2"
     library: logging
     group: core
     deps:
       - id: ArturRios.Extensions
-        version: "1.4.0"
+        version: "1.4.1"
       - id: ArturRios.Util
-        version: "2.1.0"
+        version: "2.2.0"
 
   - id: ArturRios.Jwt
-    version: "1.4.0"
+    version: "1.4.2"
     library: jwt
     group: app
 
   - id: ArturRios.Validation
-    version: "2.0.0"
+    version: "2.0.2"
     library: validation
     group: app
     deps:
       - id: ArturRios.Output
-        version: "3.2.0"
+        version: "3.3.1"
 
   - id: ArturRios.Mediator
-    version: "2.0.0"
+    version: "2.0.2"
     library: mediator
     group: app
     deps:
       - id: ArturRios.Output
-        version: "3.2.0"
+        version: "3.3.1"
 
   - id: ArturRios.Messaging
-    version: "1.4.0"
+    version: "1.5.1"
     library: messaging
     group: app
     deps:
       - id: ArturRios.Output
-        version: "3.2.0"
+        version: "3.3.1"
 
   - id: ArturRios.Util.WebApi
-    version: "5.1.0"
+    version: "6.0.0"
     library: webapi-util
     group: app
     deps:
       - id: ArturRios.Configuration
-        version: "1.2.0"
+        version: "2.0.0"
       - id: ArturRios.Jwt
-        version: "1.2.0"
+        version: "1.4.1"
       - id: ArturRios.Util
-        version: "2.1.0"
+        version: "2.2.0"
 
   - id: ArturRios.Util.Test
-    version: "5.0.0"
+    version: "6.0.0"
     library: test-util
     group: app
     deps:
       - id: ArturRios.Configuration
-        version: "1.2.0"
-      - id: ArturRios.Data.Relational.Core
-        version: "5.0.0"
-      - id: ArturRios.Mediator
         version: "2.0.0"
+      - id: ArturRios.Data.Relational.Core
+        version: "5.0.1"
+      - id: ArturRios.Mediator
+        version: "2.0.1"
       - id: ArturRios.Util
-        version: "2.1.0"
+        version: "2.2.0"
       - id: ArturRios.Util.WebApi
-        version: "5.1.0"
+        version: "5.2.0"
 
   - id: ArturRios.Data.Relational.Core
-    version: "5.0.0"
+    version: "5.0.2"
     library: data
     group: data
     deps:
       - id: ArturRios.Output
-        version: "3.2.0"
+        version: "3.3.1"
 
   - id: ArturRios.Data.PostgreSql
-    version: "3.0.2"
-    library: data
-    group: data
-    deps:
-      - id: ArturRios.Data.Relational.Core
-        project: true
-
-  - id: ArturRios.Data.MySql
-    version: "1.0.0"
-    library: data
-    group: data
-    deps:
-      - id: ArturRios.Data.Relational.Core
-        project: true
-
-  - id: ArturRios.Data.Sqlite
-    version: "3.1.0"
-    library: data
-    group: data
-    deps:
-      - id: ArturRios.Data.Relational.Core
-        project: true
-
-  - id: ArturRios.Data.Dapper
     version: "4.0.1"
     library: data
     group: data
@@ -163,32 +139,56 @@ packages:
       - id: ArturRios.Data.Relational.Core
         project: true
 
-  - id: ArturRios.Data.MongoDb
+  - id: ArturRios.Data.MySql
     version: "2.0.1"
     library: data
     group: data
     deps:
+      - id: ArturRios.Data.Relational.Core
+        project: true
+
+  - id: ArturRios.Data.Sqlite
+    version: "4.0.1"
+    library: data
+    group: data
+    deps:
+      - id: ArturRios.Data.Relational.Core
+        project: true
+
+  - id: ArturRios.Data.Dapper
+    version: "5.0.1"
+    library: data
+    group: data
+    deps:
+      - id: ArturRios.Data.Relational.Core
+        project: true
+
+  - id: ArturRios.Data.MongoDb
+    version: "3.0.1"
+    library: data
+    group: data
+    deps:
       - id: ArturRios.Output
-        version: "3.2.0"
+        version: "3.3.1"
 
   - id: ArturRios.Data.DynamoDb
-    version: "2.0.1"
+    version: "2.0.3"
     library: data
     group: data
     deps:
       - id: ArturRios.Output
-        version: "3.2.0"
+        version: "3.3.1"
 
   - id: ArturRios.Data.Export
-    version: "2.1.0"
+    version: "2.2.1"
     library: data
     group: data
     deps:
       - id: ArturRios.Output
-        version: "3.2.0"
+        version: "3.3.1"
 
   - id: ArturRios.Data.Export.Excel
-    version: "2.0.1"
+    version: "2.1.0"
     library: data
     group: data
     deps:
